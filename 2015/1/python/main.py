@@ -9,3 +9,8 @@ if __name__ == '__main__':
         sys.exit(1)
 
     file = args[1]
+
+    if not os.path.exists(file):
+        print('File not found')
+        sys.exit(1)
+

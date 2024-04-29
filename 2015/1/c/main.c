@@ -20,5 +20,14 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
+    char *buffer = NULL;
+    buffer = (char *)malloc(1000 * sizeof(char));
+
+    if (buffer == NULL)
+    {
+        printf("Error: Could not allocate memory\n");
+        return EXIT_FAILURE;
+    }
+
     return EXIT_SUCCESS;
 }

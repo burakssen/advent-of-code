@@ -14,3 +14,6 @@ if __name__ == '__main__':
         print('File not found')
         sys.exit(1)
 
+    file_content = None
+    with open(file) as f:
+        file_content = f.read()

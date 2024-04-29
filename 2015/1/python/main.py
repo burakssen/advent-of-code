@@ -17,3 +17,12 @@ if __name__ == '__main__':
     file_content = None
     with open(file) as f:
         file_content = f.read()
+
+    floor = 0
+    for i, c in enumerate(file_content):
+        if c == '(':
+            floor += 1
+        elif c == ')':
+            floor -= 1
+
+    print(floor)

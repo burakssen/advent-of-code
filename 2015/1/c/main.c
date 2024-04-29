@@ -29,5 +29,28 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
+    int floor = 0;
+    // Read the file
+    while (fgets(buffer, 1000, file) != NULL)
+    {
+        for (int i = 0; buffer[i] != '\0'; i++)
+        {
+            if (buffer[i] == '(')
+            {
+                floor++;
+            }
+            else if (buffer[i] == ')')
+            {
+                floor--;
+            }
+        }
+    }
+
+    printf("%d\n", floor);
+
+    free(buffer);
+
+    fclose(file);
+
     return EXIT_SUCCESS;
 }

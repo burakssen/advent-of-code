@@ -16,5 +16,8 @@ function main() : void {
     // read the input file
     $input = file_get_contents($input_file);
 
+    // loop each line
+    $lines = explode("\n", $input);
+    // loop each character
 
 main();

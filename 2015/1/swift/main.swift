@@ -9,4 +9,8 @@ func main(){
         return
     }
 
-}main()
+    // get the input file
+    let input_file = args[1]
+    // read the file
+    let file = try! String(contentsOfFile: input_file)
+

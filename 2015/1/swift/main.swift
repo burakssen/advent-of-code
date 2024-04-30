@@ -14,3 +14,22 @@ func main(){
     // read the file
     let file = try! String(contentsOfFile: input_file)
 
+    var count: Int = 0;
+    // split the file into lines
+    let lines = file.split(separator: "\n")
+    // iterate over the lines
+    for line in lines {
+        // iterate over the characters in the line
+        for char in line {
+            if char == "(" {
+                count += 1
+            } else if char == ")" {
+                count -= 1
+            }
+        }
+    }
+
+    print(count)
+}
+
+main()

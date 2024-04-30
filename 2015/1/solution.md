@@ -27,6 +27,11 @@
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
   - Run Command: `python main.py <input.txt>`
+- [Rust](./rust) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `1.77.2`
+  - Build System: `Cargo`
+  - Build Command: `cargo build`
+  - Run Command: `cargo run <input.txt>`
 - [Go](./go) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.22.1`
   - Run Command: `go run main.go <input.txt>`

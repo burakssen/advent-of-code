@@ -13,6 +13,12 @@ function main(...)
         return 1
     end
 
+    local lines = {}
+    for line in file:lines() do
+        table.insert(lines, line)
+    end
+    file:close()
+
 end
 
 main()

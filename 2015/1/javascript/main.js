@@ -26,4 +26,25 @@ function main(){
         process.exit(1);
     }
 
+    // split the file by lines
+    var lines = file.split('\n');
+
+    // loop each character in the file
+    var characters = {};
+    for(var i = 0; i < lines.length; i++){
+        var line = lines[i];
+        for(var j = 0; j < line.length; j++){
+            var character = line[j];
+            if(character in characters){
+                characters[character]++;
+            } else {
+                characters[character] = 1;
+            }
+        }
+    }
+
+    // output the result
+    console.log(characters['('] -characters[')'])
+}
+
 main();

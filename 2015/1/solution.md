@@ -32,6 +32,9 @@
   - Build System: `Cargo`
   - Build Command: `cargo build`
   - Run Command: `cargo run <input.txt>`
+- [Swift](./swift) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `5.10.1`
+  - Run Command: `swift main.swift <input.txt>`
 - [Go](./go) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.22.1`
   - Run Command: `go run main.go <input.txt>`

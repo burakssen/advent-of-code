@@ -16,6 +16,9 @@
   - Build System: `javac`
   - Build Command: `javac Main.java`
   - Run Command: `java Main <input.txt>`
+- [JavaScript](./javascript) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `ES6`
+  - Run Command: `node main.js <input.txt>`
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
   - Run Command: `python main.py <input.txt>`

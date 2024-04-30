@@ -11,4 +11,10 @@ func main() {
 		fmt.Println("Usage: go run main.go <input_file>")
 		return
 	}
+	file, err := os.Open(args[0])
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
 }

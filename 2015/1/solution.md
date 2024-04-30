@@ -8,7 +8,6 @@
   - Version: `C++23`
   - Compiler: `clang`
   - Build System: `CMake`
-- [TypeScript](./typescript)
 - [PHP](./php)
 - [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
   - Version: `17.0.11`
@@ -17,6 +16,11 @@
   - Run Command: `java Main <input.txt>`
 - [JavaScript](./javascript) [<span style="color:lightgreen">PASSED</span>]
   - Version: `ES6`
+  - Run Command: `node main.js <input.txt>`
+- [TypeScript](./typescript) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `ES6`
+  - Build System: `tsc`
+  - Build Command: `tsc main.ts`
   - Run Command: `node main.js <input.txt>`
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`

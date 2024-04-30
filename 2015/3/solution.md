@@ -1,0 +1,52 @@
+# My Solutions
+
+- [C](./c) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `C99`
+  - Compiler: `gcc`
+  - Build System: `Makefile`
+- [C++](./cpp) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `C++23`
+  - Compiler: `clang`
+  - Build System: `CMake`
+- [Go](./go) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `1.22.1`
+  - Run Command: `go run main.go <input.txt>`
+- [Haskell](./haskell) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `9.4.8`
+  - Build System: `GHC`
+  - Build Command: `ghc -o main main.hs`
+  - Run Command: `main <input.txt>`
+- [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `17.0.11`
+  - Build System: `javac`
+  - Build Command: `javac Main.java`
+  - Run Command: `java Main <input.txt>`
+- [JavaScript](./javascript) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `ES6`
+  - Run Command: `node main.js <input.txt>`
+- [Lua](./lua) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `5.4.6`
+  - Run Command: `lua main.lua <input.txt>`
+- [PHP](./php) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `8.3.6`
+  - Run Command: `php main.php <input.txt>`
+- [Python](./python) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `3.12.3`
+  - Run Command: `python main.py <input.txt>`
+- [Rust](./rust) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `1.77.2`
+  - Build System: `Cargo`
+  - Build Command: `cargo build`
+  - Run Command: `cargo run <input.txt>`
+- [Swift](./swift) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `5.10.1`
+  - Run Command: `swift main.swift <input.txt>`
+- [TypeScript](./typescript) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `ES6`
+  - Build System: `tsc`
+  - Build Command: `tsc main.ts`
+  - Run Command: `node main.js <input.txt>`
+- [Zig](./zig) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `0.12.0`
+  - Build System: `Zig`
+  - Run Command: `zig run main.zig -- <input.txt>`

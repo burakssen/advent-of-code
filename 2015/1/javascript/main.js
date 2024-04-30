@@ -1,3 +1,4 @@
+
 function main(){
     // Get command line arguments
     var args = process.argv.slice(1);
@@ -7,7 +8,7 @@ function main(){
         process.exit(1);
     }
 
-}main();    var filename = args[1];
+    var filename = args[1];
 
     var fs = require('fs');
     // check if file exists
@@ -16,3 +17,4 @@ function main(){
         process.exit(1);
     }
 
+main();

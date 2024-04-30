@@ -7,4 +7,5 @@ Each year has its own folder, and each day has its own folder within that.
 
 ## 2015
 
-- [Day 1: Not Quite Lisp](2015/1)
+- [Day 1: Not Quite Lisp](2015/1)-[Advent of Code](https://adventofcode.com/2015/day/1)
+- [Day 2: Day 2: I Was Told There Would Be No Math]-[Advent of Code](https://adventofcode.com/2015/day/2)

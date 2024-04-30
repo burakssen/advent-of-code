@@ -18,4 +18,32 @@ pub fn main() !void {
 
     var buffered_reader = std.io.bufferedReader(file.reader());
     var reader = buffered_reader.reader();
+    var buffer: [10000]u8 = undefined;
+
+    var count: i64 = 0;
+
+    while (true) {
+        const line = reader.readUntilDelimiterOrEof(buffer[0..], '\n') catch |err| {
+            try stdout.print("Error reading file: {}\n", .{err});
+            return;
+        };
+
+        if (line == null) break;
+
+        // loop each character in the line
+        var i: usize = 0;
+        while (i < line.?.len) {
+            const c = line.?[i];
+
+            if (c == '(') {
+                count += 1;
+            } else if (c == ')') {
+                count -= 1;
+            }
+
+            i += 1;
+        }
+    }
+
+    try stdout.print("{}\n", .{count});
 }

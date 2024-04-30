@@ -7,4 +7,12 @@ function main(){
         process.exit(1);
     }
 
-}main();
+}main();    var filename = args[1];
+
+    var fs = require('fs');
+    // check if file exists
+    if(!fs.existsSync(filename)){
+        console.log("File does not exist");
+        process.exit(1);
+    }
+

@@ -7,4 +7,11 @@ fn main() {
         println!("Usage: {} <input_file>", args[0]);
         return;
     }
+
+    let input_file = &args[1];
+
+    // read the file
+    let contents = std::fs::read_to_string(input_file)
+        .expect("Something went wrong reading the file");
+
 }

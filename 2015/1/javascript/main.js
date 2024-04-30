@@ -17,4 +17,13 @@ function main(){
         process.exit(1);
     }
 
+    // open the file
+    var file = fs.readFileSync(filename, 'utf8');
+
+    // check if the file is empty
+    if(file.length == 0){
+        console.log("File is empty");
+        process.exit(1);
+    }
+
 main();

@@ -19,5 +19,21 @@ function main() : void {
     // loop each line
     $lines = explode("\n", $input);
     // loop each character
+    $count = 0;
+    foreach($lines as $line) {
+        $chars = str_split($line);
+        foreach($chars as $char) {
+            if($char == '(') {
+                $count++;
+            }
+            elseif($char == ')') {
+                $count--;
+            }
+        }
+    }
+
+    echo $count . "\n";
+
+}
 
 main();

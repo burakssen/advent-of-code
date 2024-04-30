@@ -8,7 +8,6 @@
   - Version: `C++23`
   - Compiler: `clang`
   - Build System: `CMake`
-- [PHP](./php)
 - [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
   - Version: `17.0.11`
   - Build System: `javac`
@@ -22,6 +21,9 @@
   - Build System: `tsc`
   - Build Command: `tsc main.ts`
   - Run Command: `node main.js <input.txt>`
+- [PHP](./php) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `8.3.6`
+  - Run Command: `php main.php <input.txt>`
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
   - Run Command: `python main.py <input.txt>`

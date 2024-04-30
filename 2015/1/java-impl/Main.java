@@ -17,7 +17,20 @@ public class Main {
         try {
             Scanner scanner = new Scanner(file);
 
-            
+            var floor = 0;
+            // read file
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                for (int i = 0; i < line.length(); i++) {
+                    if (line.charAt(i) == '(') {
+                        floor++;
+                    } else if (line.charAt(i) == ')') {
+                        floor--;
+                    }
+                }
+            }
+
+            System.out.println(floor);
 
         } catch (Exception e) {
             System.out.println("Error: " + e);

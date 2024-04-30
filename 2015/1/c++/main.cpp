@@ -19,6 +19,25 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
+    std::string buffer;
+    int floor = 0;
+    // Read the file
+    while (std::getline(file, buffer))
+    {
+        for (int i = 0; i < buffer.size(); i++)
+        {
+            if (buffer[i] == '(')
+            {
+                floor++;
+            }
+            else if (buffer[i] == ')')
+            {
+                floor--;
+            }
+        }
+    }
+
+    std::cout << floor << std::endl;
 
     return EXIT_SUCCESS;
 }

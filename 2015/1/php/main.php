@@ -10,4 +10,11 @@ function main() : void {
         echo "Usage: php main.php <input_file>\n";
         return;
     }
-}main();
+
+    $input_file = $args[0];
+
+    // read the input file
+    $input = file_get_contents($input_file);
+
+
+main();

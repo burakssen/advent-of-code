@@ -1,3 +1,6 @@
 c/main
 c/main.o
 c++/build
+haskell/main
+haskell/main.o
+haskell/main.hi

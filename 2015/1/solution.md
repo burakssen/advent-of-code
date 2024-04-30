@@ -8,7 +8,6 @@
   - Version: `C++23`
   - Compiler: `clang`
   - Build System: `CMake`
-- [JavaScript](./javascript)
 - [TypeScript](./typescript)
 - [PHP](./php)
 - [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]

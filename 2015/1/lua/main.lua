@@ -19,6 +19,23 @@ function main(...)
     end
     file:close()
 
+    local count = 0
+    -- loop characters for each line
+    for i, line in ipairs(lines) do
+        for c in line:gmatch(".") do
+            if c == "(" then
+                count = count + 1
+            elseif c == ")" then
+                count = count - 1
+            end
+        end
+    end
+
+    print(count)
+
+
+
+    return 0
 end
 
 main()

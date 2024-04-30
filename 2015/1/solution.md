@@ -43,3 +43,6 @@
   - Build System: `GHC`
   - Build Command: `ghc -o main main.hs`
   - Run Command: `main <input.txt>`
+- [Lua](./lua) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `5.4.6`
+  - Run Command: `lua main.lua <input.txt>`

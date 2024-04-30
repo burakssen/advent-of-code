@@ -1,6 +1,8 @@
 c/*.out
 c/main
 c++/build
+typescript/node_modules
+typescript/main.js
 go/main
 haskell/main
 haskell/main.hi

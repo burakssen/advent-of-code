@@ -8,18 +8,25 @@
   - Version: `C++23`
   - Compiler: `clang`
   - Build System: `CMake`
-- [Java](./java)
 - [JavaScript](./javascript)
 - [TypeScript](./typescript)
 - [PHP](./php)
+- [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `17.0.11`
+  - Build System: `javac`
+  - Build Command: `javac Main.java`
+  - Run Command: `java Main <input.txt>`
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
 - [Rust](./rust)
 - [Swift](./swift)
-- [Go](./go)
-- [R](./r)
-- [Dart](./dart)
-- [Haskell](./haskell)
-- [Julia](./julia)
 - [Zig](./zig)
 - [Lua](./lua)
+- [Go](./go) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `1.22.1`
+  - Run Command: `go run main.go <input.txt>`
+- [Haskell](./haskell) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `9.4.8`
+  - Build System: `GHC`
+  - Build Command: `ghc -o main main.hs`
+  - Run Command: `main <input.txt>`

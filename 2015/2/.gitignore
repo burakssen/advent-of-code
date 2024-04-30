@@ -5,3 +5,5 @@ haskell/main
 haskell/main.o
 haskell/main.hi
 java-impl/Main.class
+rust/Cargo.lock
+rust/target

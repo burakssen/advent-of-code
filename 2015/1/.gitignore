@@ -5,3 +5,4 @@ go/main
 haskell/main
 haskell/main.hi
 haskell/main.o
+java-impl/Main.class

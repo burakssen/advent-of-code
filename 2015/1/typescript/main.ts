@@ -16,6 +16,10 @@ function main() {
     process.exit(1);
   }
 
+  const data: string = readFileSync(filename, "utf8");
+
+  const lines: string[] = data.split("\n");
+  // loop each character
 }
 
 main();

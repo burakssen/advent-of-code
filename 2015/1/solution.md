@@ -1,0 +1,25 @@
+# My Solutions
+
+- [C](./c) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `C99`
+  - Compiler: `gcc`
+  - Build System: `Makefile`
+- [C++](./cpp) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `C++23`
+  - Compiler: `clang`
+  - Build System: `CMake`
+- [Java](./java)
+- [JavaScript](./javascript)
+- [TypeScript](./typescript)
+- [PHP](./php)
+- [Python](./python) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `3.12.3`
+- [Rust](./rust)
+- [Swift](./swift)
+- [Go](./go)
+- [R](./r)
+- [Dart](./dart)
+- [Haskell](./haskell)
+- [Julia](./julia)
+- [Zig](./zig)
+- [Lua](./lua)

@@ -43,6 +43,10 @@
   - Build System: `GHC`
   - Build Command: `ghc -o main main.hs`
   - Run Command: `main <input.txt>`
+- [Zig](./zig) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `0.12.0`
+  - Build System: `Zig`
+  - Run Command: `zig run main.zig -- <input.txt>`
 - [Lua](./lua) [<span style="color:lightgreen">PASSED</span>]
   - Version: `5.4.6`
   - Run Command: `lua main.lua <input.txt>`

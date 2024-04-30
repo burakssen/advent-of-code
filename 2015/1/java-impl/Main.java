@@ -11,5 +11,17 @@ public class Main {
             return;
         }
         
+        // open file
+        String filename = arguments[0];
+        File file = new File(filename);
+        try {
+            Scanner scanner = new Scanner(file);
+
+            
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+
     }
 }

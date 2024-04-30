@@ -6,3 +6,10 @@ main = do
   case args of
     [filename] -> processFile filename
     _ -> putStrLn "Usage: main <input_file>"
+
+processFile :: FilePath -> IO ()
+processFile filename = do
+  contents <- readFile filename
+  let floorNumber = calculateFloor (filter (`elem` "()") contents)
+  print floorNumber
+

@@ -3,6 +3,7 @@ c/main
 c++/build
 typescript/node_modules
 typescript/main.js
+rust/target
 go/main
 haskell/main
 haskell/main.hi

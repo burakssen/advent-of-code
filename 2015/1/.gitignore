@@ -2,3 +2,6 @@ c/*.out
 c/main
 c++/build
 go/main
+haskell/main
+haskell/main.hi
+haskell/main.o

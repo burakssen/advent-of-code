@@ -9,6 +9,16 @@ int main(int argc, char **argv)
         return EXIT_FAILURE;
     }
 
+    std::string file_name = argv[1];
+
+    std::ifstream file(file_name);
+
+    if (!file.is_open())
+    {
+        std::cout << "Error: Could not open file " << file_name << std::endl;
+        return EXIT_FAILURE;
+    }
+
 
     return EXIT_SUCCESS;
 }

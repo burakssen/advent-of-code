@@ -22,6 +22,7 @@
 - [Swift](./swift)
 - [Zig](./zig)
 - [Lua](./lua)
+  - Run Command: `python main.py <input.txt>`
 - [Go](./go) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.22.1`
   - Run Command: `go run main.go <input.txt>`

@@ -3,6 +3,23 @@ class Position {
         this.x = x;
         this.y = y;
     }
+
+    move(direction){
+        switch(direction){
+            case '^':
+                this.y++;
+                break;
+            case 'v':
+                this.y--;
+                break;
+            case '>':
+                this.x++;
+                break;
+            case '<':
+                this.x--;
+                break;
+        }
+    }
 }
 
 function main(){
@@ -37,20 +54,7 @@ function main(){
         const line = lines[i];
         for(let j = 0; j < line.length; j++){
             const char = line[j];
-            switch(char){
-                case '^':
-                    position.y++;
-                    break;
-                case 'v':
-                    position.y--;
-                    break;
-                case '>':
-                    position.x++;
-                    break;
-                case '<':
-                    position.x--;
-                    break;
-            }
+            position.move(char);
             if (grid[position.x] === undefined){
                 grid[position.x] = {};
                 grid[position.x][position.y] = 1;

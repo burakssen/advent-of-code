@@ -30,6 +30,8 @@ int main(int argc, char **argv)
     }
 
     int floor = 0;
+    int basement = 0;
+    int count = 0;
     // Read the file
     while (fgets(buffer, 1000, file) != NULL)
     {
@@ -43,10 +45,17 @@ int main(int argc, char **argv)
             {
                 floor--;
             }
+
+            count++;
+            if (floor == -1 && basement == 0)
+            {
+                basement = count;
+            }
         }
     }
 
-    printf("%d\n", floor);
+    printf("Floor: %d\n", floor);
+    printf("Basement: %d\n", basement);
 
     free(buffer);
 

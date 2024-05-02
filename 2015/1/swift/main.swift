@@ -14,7 +14,9 @@ func main(){
     // read the file
     let file = try! String(contentsOfFile: input_file)
 
+    var floor: Int = 0;
     var count: Int = 0;
+    var basement: Int = 0;
     // split the file into lines
     let lines = file.split(separator: "\n")
     // iterate over the lines
@@ -22,14 +24,20 @@ func main(){
         // iterate over the characters in the line
         for char in line {
             if char == "(" {
-                count += 1
+                floor += 1
             } else if char == ")" {
-                count -= 1
+                floor -= 1
+            }
+
+            count += 1
+            if floor == -1 && basement == 0 {
+                basement = count
             }
         }
     }
 
-    print(count)
+    print("Floor:", floor)
+    print("Basement:", basement)
 }
 
 main()

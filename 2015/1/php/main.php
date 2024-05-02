@@ -19,21 +19,28 @@ function main() : void {
     // loop each line
     $lines = explode("\n", $input);
     // loop each character
+    $floor = 0;
     $count = 0;
+    $basement = 0;
     foreach($lines as $line) {
         $chars = str_split($line);
         foreach($chars as $char) {
             if($char == '(') {
-                $count++;
+                $floor++;
             }
             elseif($char == ')') {
-                $count--;
+                $floor--;
+            }
+
+            $count++;
+            if($floor == -1 && $basement == 0) {
+                $basement = $count;
             }
         }
     }
 
-    echo $count . "\n";
-
+    echo "Floor: " . $floor . "\n";
+    echo "Basement: " . $basement . "\n";
 }
 
 main();

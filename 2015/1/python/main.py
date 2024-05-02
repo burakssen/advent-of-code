@@ -20,10 +20,17 @@ if __name__ == '__main__':
         file_content = f.read()
 
     floor = 0
+    count = 0
+    basement = 0
     for i, c in enumerate(file_content):
         if c == '(':
             floor += 1
         elif c == ')':
             floor -= 1
 
-    print(floor)
+        count += 1
+        if floor == -1 and basement == 0:
+            basement = count
+
+    print("Floor:", floor)
+    print("Basement:", basement)

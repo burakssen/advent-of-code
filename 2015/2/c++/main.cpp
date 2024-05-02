@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <algorithm>
 
 int main(int argc, char **argv)
 {
@@ -20,7 +21,8 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    int total = 0;
+    int paper_size = 0;
+    int ribbon_length = 0;
     std::string line;
     while (std::getline(file, line))
     {
@@ -39,11 +41,20 @@ int main(int argc, char **argv)
             smallest = c * a;
         }
 
+        int values[3] = {a, b, c};
+        std::sort(values, values + 3);
+        int small1 = values[0];
+        int small2 = values[1];
+
+        int length = 2 * small1 + 2 * small2 + a * b * c;
+        ribbon_length += length;
+
         area += smallest;
-        total += area;
+        paper_size += area;
     }
 
-    std::cout << total << std::endl;
+    std::cout << "Paper Size: " << paper_size << std::endl;
+    std::cout << "Ribbon Length: " << ribbon_length << std::endl;
 
     file.close();
 

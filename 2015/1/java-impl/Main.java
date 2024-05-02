@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Usage: java Main <input_file>");
             return;
         }
-        
+
         // open file
         String filename = arguments[0];
         File file = new File(filename);
@@ -18,6 +18,8 @@ public class Main {
             Scanner scanner = new Scanner(file);
 
             var floor = 0;
+            var count = 0;
+            var basement = 0;
             // read file
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -27,10 +29,16 @@ public class Main {
                     } else if (line.charAt(i) == ')') {
                         floor--;
                     }
+
+                    count++;
+                    if (floor == -1 && basement == 0) {
+                        basement = count;
+                    }
                 }
             }
 
-            System.out.println(floor);
+            System.out.println("Floor: " + floor);
+            System.out.println("Basement: " + basement);
 
         } catch (Exception e) {
             System.out.println("Error: " + e);

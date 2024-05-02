@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"sort"
 )
 
 func main() {
@@ -24,7 +25,8 @@ func main() {
 		return
 	}
 
-	total := 0
+	paper_size := 0
+	ribbon_length := 0
 	for {
 		var line string
 		_, err := fmt.Fscanln(file, &line)
@@ -51,9 +53,16 @@ func main() {
 			smallest = c * a
 		}
 
+		values := [3]int{a, b, c}
+
+		sort.Ints(values[:])
+
+		ribbon_length += 2*values[0] + 2*values[1] + a*b*c
+
 		area += smallest
-		total += area
+		paper_size += area
 	}
 
-	fmt.Println(total)
+	fmt.Println("Paper size:", paper_size)
+	fmt.Println("Ribbon length:", ribbon_length)
 }

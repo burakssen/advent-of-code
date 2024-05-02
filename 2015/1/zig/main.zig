@@ -20,7 +20,9 @@ pub fn main() !void {
     var reader = buffered_reader.reader();
     var buffer: [10000]u8 = undefined;
 
+    var floor: i64 = 0;
     var count: i64 = 0;
+    var basement: i64 = 0;
 
     while (true) {
         const line = reader.readUntilDelimiterOrEof(buffer[0..], '\n') catch |err| {
@@ -36,14 +38,19 @@ pub fn main() !void {
             const c = line.?[i];
 
             if (c == '(') {
-                count += 1;
+                floor += 1;
             } else if (c == ')') {
-                count -= 1;
+                floor -= 1;
             }
 
             i += 1;
+            count += 1;
+            if (floor == -1 and basement == 0) {
+                basement = count;
+            }
         }
     }
 
-    try stdout.print("{}\n", .{count});
+    try stdout.print("Floor: {}\n", .{floor});
+    try stdout.print("Basement: {}\n", .{basement});
 }

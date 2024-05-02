@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int cmpfunc(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
+}
+
 int main(int argc, char **argv)
 {
     if (argc < 2)
@@ -17,7 +22,8 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    int total = 0;
+    int paper_size = 0;
+    int ribbon_length = 0;
     // loop each line in the file (each line has 3 values and they are separated by a x)
     char line[256];
     while (fgets(line, sizeof(line), file))
@@ -39,12 +45,21 @@ int main(int argc, char **argv)
             smallest = c * a;
         }
 
+        int values[3] = {a, b, c};
+
+        qsort(values, 3, sizeof(int), cmpfunc);
+        int small1 = values[0];
+        int small2 = values[1];
+
+        int length = 2 * small1 + 2 * small2 + a * b * c;
+        ribbon_length += length;
         // add the area of the smallest side
         area += smallest;
-        total += area;
+        paper_size += area;
     }
 
-    printf("%d\n", total);
+    printf("Paper Size: %d\n", paper_size);
+    printf("Ribbon Length: %d\n", ribbon_length);
 
     fclose(file);
     return 0;

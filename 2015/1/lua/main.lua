@@ -19,21 +19,27 @@ function main(...)
     end
     file:close()
 
+    local floor = 0
+    local basement = 0
     local count = 0
     -- loop characters for each line
     for i, line in ipairs(lines) do
         for c in line:gmatch(".") do
             if c == "(" then
-                count = count + 1
+                floor = floor + 1
             elseif c == ")" then
-                count = count - 1
+                floor = floor - 1
+            end
+
+            count = count + 1
+            if floor == -1 and basement == 0 then
+                basement = count
             end
         end
     end
 
-    print(count)
-
-
+    print("Floor: " .. floor)
+    print("Basement: " .. basement)
 
     return 0
 end

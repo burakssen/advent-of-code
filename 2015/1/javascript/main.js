@@ -31,6 +31,8 @@ function main(){
 
     // loop each character in the file
     var characters = {};
+    var count = 0;
+    var basement = 0;
     for(var i = 0; i < lines.length; i++){
         var line = lines[i];
         for(var j = 0; j < line.length; j++){
@@ -40,11 +42,17 @@ function main(){
             } else {
                 characters[character] = 1;
             }
+
+            count++;
+            if(characters['('] - characters[')'] == -1 && basement == 0){
+                basement = count;
+            }
         }
     }
 
     // output the result
-    console.log(characters['('] -characters[')'])
+    console.log("Floor: " + (characters['('] - characters[')']));
+    console.log("Basement: " + basement);
 }
 
 main();

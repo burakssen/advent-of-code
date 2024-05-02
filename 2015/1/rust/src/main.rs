@@ -14,19 +14,26 @@ fn main() {
     let contents = std::fs::read_to_string(input_file)
         .expect("Something went wrong reading the file");
 
+    let mut floor = 0;
     let mut count = 0;
+    let mut basement = 0;
     // loop through the lines
     for line in contents.lines() {
         // loop through the characters
         for c in line.chars() {
             if c == '(' {
-                count += 1;
+                floor += 1;
             }
             else if c == ')' {
-                count -= 1;
+                floor -= 1;
             }
-        
+
+            count += 1;
+            if floor == -1 && basement == 0 {
+                basement = count;
+            }
         }
     }
-    println!("{}", count);
+    println!("Floor: {}", floor);
+    println!("Basement: {}", basement);
 }

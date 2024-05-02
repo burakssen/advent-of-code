@@ -19,6 +19,8 @@ func main() {
 	}
 
 	// loop line by line
+	floor := 0
+	basement := 0
 	count := 0
 	for {
 		var line string
@@ -30,12 +32,18 @@ func main() {
 		// loop char by char
 		for _, c := range line {
 			if c == '(' {
-				count++
+				floor++
 			} else if c == ')' {
-				count--
+				floor--
+			}
+
+			count++
+			if floor == -1 && basement == 0 {
+				basement = count
 			}
 		}
 	}
 
-	fmt.Println(count)
+	fmt.Println("Floor:", floor)
+	fmt.Println("Basement:", basement)
 }

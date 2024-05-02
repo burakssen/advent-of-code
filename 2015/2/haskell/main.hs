@@ -1,3 +1,4 @@
+import Control.Monad.RWS.Lazy (MonadState (put))
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -10,11 +11,16 @@ main = do
 processFile :: FilePath -> IO ()
 processFile filename = do
   contents <- readFile filename
-  let total = calculateTotal contents
-  print total
+  let paper_size = calculatePaperSize contents
+  let ribbon_lenght = calculateRibbonLenght contents
+  putStrLn $ "Paper size: " ++ show paper_size
+  putStrLn $ "Ribbon lenght: " ++ show ribbon_lenght
 
-calculateTotal :: String -> Int
-calculateTotal = sum . map calculateLine . lines
+calculatePaperSize :: String -> Int
+calculatePaperSize = sum . map calculateLine . lines
+
+calculateRibbonLenght :: String -> Int
+calculateRibbonLenght = sum . map calculateRibbon . lines
 
 split :: (Eq a) => a -> [a] -> [[a]]
 split _ [] = []
@@ -29,9 +35,17 @@ calculateLine line = case split 'x' line of
   [l, w, h] -> calculateArea l w h
   _ -> 0
 
+calculateRibbon :: String -> Int
+calculateRibbon line = case split 'x' line of
+  [l, w, h] -> calculateLength l w h
+  _ -> 0
+
 calculateArea :: String -> String -> String -> Int
 calculateArea l w h = 2 * lw + 2 * wh + 2 * hl + minimum [lw, wh, hl]
   where
     lw = read l * read w
     wh = read w * read h
     hl = read h * read l
+
+calculateLength :: String -> String -> String -> Int
+calculateLength l w h = minimum [2 * (read l + read w), 2 * (read w + read h), 2 * (read h + read l)] + read l * read w * read h

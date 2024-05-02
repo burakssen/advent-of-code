@@ -21,6 +21,8 @@ int main(int argc, char **argv)
 
     std::string buffer;
     int floor = 0;
+    int basement = 0;
+    int count = 0;
     // Read the file
     while (std::getline(file, buffer))
     {
@@ -34,10 +36,16 @@ int main(int argc, char **argv)
             {
                 floor--;
             }
+
+            count++;
+            if (floor == -1 && basement == 0)
+            {
+                basement = count;
+            }
         }
     }
 
-    std::cout << floor << std::endl;
-
+    std::cout << "Floor: " << floor << "\n";
+    std::cout << "Basement: " << basement << "\n";
     return EXIT_SUCCESS;
 }

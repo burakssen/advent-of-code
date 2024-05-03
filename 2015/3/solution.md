@@ -4,6 +4,9 @@
   - Version: `C99`
   - Compiler: `gcc`
   - Build System: `Makefile`
+  - Run Commands:
+    - Part 1: `./main-part1 <input.txt>`
+    - Part 2: `./main-part2 <input.txt>`
 - [C++](./cpp) [<span style="color:lightgreen">PASSED</span>]
   - Version: `C++23`
   - Compiler: `clang`

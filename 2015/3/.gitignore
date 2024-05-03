@@ -1,5 +1,7 @@
-c/main
-c/main.o
+c/main-part1
+c/main-part1.o
+c/main-part2
+c/main-part2.o
 c++/build
 haskell/main
 haskell/main.hi

@@ -2,6 +2,8 @@ c/main-part1
 c/main-part1.o
 c/main-part2
 c/main-part2.o
+go/main-part1
+go/main-part2
 c++/build
 haskell/main
 haskell/main.hi

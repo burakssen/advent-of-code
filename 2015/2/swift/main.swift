@@ -13,13 +13,20 @@ func main() {
     let fileURL = URL(fileURLWithPath: input_file)
     let contents = try! String(contentsOf: fileURL)
     let lines = contents.split(separator: "\n")
-    var total = 0
+    var paper_size = 0
+    var ribbon_length = 0
     for line in lines {
         // split line by x
         let parts = line.split(separator: "x")
         let l = Int(parts[0])!
         let w = Int(parts[1])!
         let h = Int(parts[2])!
+
+        var sides = [l, w, h].sorted()
+
+        sides.sort()
+
+        ribbon_length += 2*sides[0] + 2*sides[1] + l*w*h
 
         // calculate surface area
         let area = 2*l*w + 2*w*h + 2*h*l
@@ -28,9 +35,10 @@ func main() {
         let slack = min(l*w, w*h, h*l)
 
         // calculate total
-        total += area + slack
+        paper_size += area + slack
     }
-    print(total)
+    print("Paper size: \(paper_size)")
+    print("Ribbon length: \(ribbon_length)")
 }
 
 main()

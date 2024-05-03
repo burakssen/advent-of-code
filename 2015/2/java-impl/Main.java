@@ -48,6 +48,8 @@ public class Main {
                 paper_size += area + slack;
             }
 
+            scanner.close();
+
             System.out.println("Paper Size: " + paper_size);
             System.out.println("Ribbon Lenght: " + ribbon_lenght);
         } catch (Exception e) {

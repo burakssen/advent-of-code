@@ -21,7 +21,8 @@ function main()
         table.insert(lines, line)
     end
 
-    local total = 0
+    local paper_size = 0
+    local ribbon_length = 0
     -- process input
     for i, line in pairs(lines) do
         -- split line by x
@@ -34,6 +35,12 @@ function main()
         local w = parts[2]
         local h = parts[3]
 
+        local sides = { l, w, h }
+        table.sort(sides)
+
+        -- calculate ribbon length
+        ribbon_length = ribbon_length + 2 * sides[1] + 2 * sides[2] + l * w * h
+
         -- calculate surface area
         local area = 2 * l * w + 2 * w * h + 2 * h * l
 
@@ -41,10 +48,11 @@ function main()
         local smallest = math.min(l * w, w * h, h * l)
 
         -- calculate total area
-        total = total + area + smallest
+        paper_size = paper_size + area + smallest
     end
 
-    print(total)
+    print("Paper Size: " .. paper_size)
+    print("Ribbon Length: " .. ribbon_length)
 end
 
 main()

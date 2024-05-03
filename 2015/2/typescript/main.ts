@@ -21,7 +21,8 @@ function main() {
 
   const lines: String[] = input.split("\n");
 
-  let total = 0;
+  let paper_size: number = 0;
+  let ribbon_length: number = 0;
   for (let line of lines) {
     // split line by x
     const parts: String[] = line.split("x");
@@ -35,13 +36,18 @@ function main() {
     const w: number = parseInt(parts[1] as string);
     const h: number = parseInt(parts[2] as string);
 
-    const sides: number[] = [l * w, w * h, h * l];
-    const min_side: number = Math.min(...sides);
+    let sides: number[] = [l, w, h];
+    sides.sort((a, b) => a - b);
+    // calculate ribbon length
+    ribbon_length += 2 * sides[0] + 2 * sides[1] + l * w * h;
+    // calculate paper size
+    const min_side: number = sides[0] * sides[1];
 
-    total += 2 * sides.reduce((a, b) => a + b) + min_side;
+    paper_size += 2 * l * w + 2 * w * h + 2 * h * l + min_side;
   }
 
-  console.log(total);
+  console.log("Paper size:", paper_size);
+  console.log("Ribbon length:", ribbon_length);
 }
 
 main();

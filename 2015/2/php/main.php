@@ -19,7 +19,8 @@ function main() {
 
     // split input by lines
     $lines = explode("\n", $input);
-    $total = 0;
+    $paper_size = 0;
+    $ribbon_length = 0;
     foreach ($lines as $line) {
         // split line by x
         $parts = explode("x", $line);
@@ -32,12 +33,19 @@ function main() {
         $w = intval($parts[1]);
         $h = intval($parts[2]);
 
+        $sides = [$l, $w, $h];
+        sort($sides);
+
+        $ribbon_length += 2 * $sides[0] + 2 * $sides[1] + $l * $w * $h;
+
+
         $area = 2 * $l * $w + 2 * $w * $h + 2 * $h * $l;
         $extra = min($l * $w, $w * $h, $h * $l);
 
-        $total += $area + $extra;
+        $paper_size += $area + $extra;
     }
-    printf("%d\n", $total);
+    printf("Paper Size: %d\n", $paper_size);
+    printf("Ribbon Length: %d\n", $ribbon_length);
 }
 
 main();

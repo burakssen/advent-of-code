@@ -1,4 +1,5 @@
 import java.io.File;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +18,8 @@ public class Main {
         }
 
         try {
-            int total = 0;
+            int paper_size = 0;
+            int ribbon_lenght = 0;
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -32,12 +34,22 @@ public class Main {
                 int w = Integer.parseInt(parts[1]);
                 int h = Integer.parseInt(parts[2]);
 
+                int[] sides = new int[] { l, w, h };
+                Arrays.sort(sides);
+
+                int side1 = sides[0];
+                int side2 = sides[1];
+
+                // Ribbon
+                ribbon_lenght += 2 * side1 + 2 * side2 + l * w * h;
+
                 int area = 2 * l * w + 2 * w * h + 2 * h * l;
                 int slack = Math.min(Math.min(l * w, w * h), h * l);
-                total += area + slack;
+                paper_size += area + slack;
             }
 
-            System.out.println(total);
+            System.out.println("Paper Size: " + paper_size);
+            System.out.println("Ribbon Lenght: " + ribbon_lenght);
         } catch (Exception e) {
             System.out.println("Error reading file: " + e.getMessage());
         }

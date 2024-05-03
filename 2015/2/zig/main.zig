@@ -18,7 +18,8 @@ pub fn main() !void {
     var reader = buffered_reader.reader();
     var buffer: [32]u8 = undefined;
 
-    var total: i32 = 0;
+    var paper_size: i32 = 0;
+    var ribbon_length: i32 = 0;
     while (true) {
         const line_opt = reader.readUntilDelimiterOrEof(buffer[0..], '\n') catch |err| {
             try stdout.print("Error reading file: {}\n", .{err});
@@ -51,6 +52,12 @@ pub fn main() !void {
             const w = dimensions[1];
             const h = dimensions[2];
 
+            var sides = [_]i32{ l, w, h };
+
+            std.mem.sort(i32, &sides, {}, std.sort.asc(i32));
+
+            ribbon_length += 2 * sides[0] + 2 * sides[1] + l * w * h;
+
             const lw = l * w;
             const wh = w * h;
             const hl = h * l;
@@ -64,11 +71,12 @@ pub fn main() !void {
                 slack = hl;
             }
 
-            total += area + slack;
+            paper_size += area + slack;
         } else {
             break;
         }
     }
 
-    try stdout.print("{}\n", .{total});
+    try stdout.print("Paper size: {}\n", .{paper_size});
+    try stdout.print("Ribbon length: {}\n", .{ribbon_length});
 }

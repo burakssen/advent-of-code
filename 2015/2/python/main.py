@@ -19,19 +19,25 @@ def main():
     with open(input_file, "r") as f:
         lines = f.readlines()
     
-    total = 0
+    paper_size = 0
+    ribbon_length = 0
     for line in lines:
         line = line.split('x')
         
         l = int(line[0])
         w = int(line[1])
         h = int(line[2])
+
+        sides = [l, w, h]
+        sides.sort()
+        ribbon_length += 2*sides[0] + 2*sides[1] + l*w*h
         
         area = 2*l*w + 2*w*h + 2*h*l
         min_side = min(l*w, w*h, h*l)
-        total += area + min_side
+        paper_size += area + min_side
     
-    print(total)
+    print("Paper size:", paper_size)
+    print("Ribbon length:", ribbon_length)
 
 
 

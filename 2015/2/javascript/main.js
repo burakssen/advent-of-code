@@ -12,13 +12,20 @@ function main(){
     const data = fs.readFileSync(inputFile, 'utf8');
     const lines = data.split('\n');
 
-    let total = 0;
+    let paper_size = 0;
+    let ribbon_length = 0;
     for(let i = 0; i < lines.length; i++){
         // split the line into words
         const words = lines[i].split('x');
         const l = parseInt(words[0]);
         const w = parseInt(words[1]);
         const h = parseInt(words[2]);
+
+        let sides = [l, w, h];
+        sides.sort((a, b) => a - b);
+
+        // calculate the ribbon length
+        ribbon_length += 2 * sides[0] + 2 * sides[1] + l * w * h;
 
         // calculate the surface area
         const lw = l * w;
@@ -30,10 +37,11 @@ function main(){
 
         // calculate the total surface area
         const area = 2 * lw + 2 * wh + 2 * hl + minSide;
-        total += area;
+        paper_size += area;
     }
 
-    console.log(total);
+    console.log("Paper size: " + paper_size);
+    console.log("Ribbon length: " + ribbon_length);
 }
 
 main();

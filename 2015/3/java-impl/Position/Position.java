@@ -13,6 +13,26 @@ public class Position {
         this.hashCode = Objects.hash(x, y);
     }
 
+    public void move(char direction) {
+        switch (direction) {
+            case '^':
+                this.y++;
+                break;
+            case '<':
+                this.x--;
+                break;
+            case '>':
+                this.x++;
+                break;
+            case 'v':
+                this.y--;
+                break;
+            default:
+                System.out.println("Invalid character: " + direction);
+                break;
+        }
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -30,5 +50,9 @@ public class Position {
     @Override
     public int hashCode() {
         return hashCode;
+    }
+
+    public void reHash() {
+        this.hashCode = Objects.hash(x, y);
     }
 }

@@ -34,25 +34,12 @@ public class Main {
                 map.put(pos, 1);
 
                 for (int i = 0; i < line.length(); i++) {
-                    switch (line.charAt(i)) {
-                        case '^':
-                            pos = new Position(pos.x, pos.y + 1);
-                            break;
-                        case '<':
-                            pos = new Position(pos.x - 1, pos.y);
-                            break;
-                        case '>':
-                            pos = new Position(pos.x + 1, pos.y);
-                            break;
-                        case 'v':
-                            pos = new Position(pos.x, pos.y - 1);
-                            break;
-                        default:
-                            System.out.println("Invalid character: " + line.charAt(i));
-                            break;
-                    }
-
-                    map.put(pos, map.getOrDefault(pos, 0) + 1);
+                    Position newPos = new Position(pos.x, pos.y);
+                    char direction = line.charAt(i);
+                    newPos.move(direction);
+                    newPos.reHash();
+                    map.put(newPos, map.getOrDefault(newPos, 0) + 1);
+                    pos = newPos;
                 }
 
                 int count = map.size();

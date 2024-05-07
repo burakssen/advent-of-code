@@ -7,6 +7,8 @@ I have multiple solution with different languages. Each language on its own fold
 
 **Note:** I'm not trying to be the fastest or the most efficient, I'm just trying to have fun and learn something new.
 
+![Language Distribution](language_distribution.svg)
+
 ## Years
 
 | Year            |

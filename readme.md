@@ -9,7 +9,7 @@ I have multiple solution with different languages. Each language on its own fold
 
 ## Language Distribution
 
-<div style="text-align:center"><img src="language_distribution.svg" /></div>
+<p align="center"><img src="language_distribution.svg" /></p>
 
 ## Years
 

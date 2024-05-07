@@ -20,4 +20,6 @@ I have multiple solution with different languages. Each language on its own fold
 - [Day 2: I Was Told There Would Be No Math](2015/2) - [Problem Day 2](https://adventofcode.com/2015/day/2)
 - [Day 3: Perfectly Spherical Houses in a Vacuum](2015/3) - [Problem Day 3](https://adventofcode.com/2015/day/3)
 - [Day 4: The Ideal Stocking Stuffer](2015/4) - [Problem Day 4](https://adventofcode.com/2015/day/4)
+- [Day 5: Doesn't He Have Intern-Elves For This?](2015/5) - [Problem Day 5](https://adventofcode.com/2015/day/5)
+
 ### 2016

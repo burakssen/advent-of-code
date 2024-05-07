@@ -19,5 +19,5 @@ I have multiple solution with different languages. Each language on its own fold
 - [Day 1: Not Quite Lisp](2015/1) - [Problem Day 1](https://adventofcode.com/2015/day/1)
 - [Day 2: I Was Told There Would Be No Math](2015/2) - [Problem Day 2](https://adventofcode.com/2015/day/2)
 - [Day 3: Perfectly Spherical Houses in a Vacuum](2015/3) - [Problem Day 3](https://adventofcode.com/2015/day/3)
-
+- [Day 4: The Ideal Stocking Stuffer](2015/4) - [Problem Day 4](https://adventofcode.com/2015/day/4)
 ### 2016

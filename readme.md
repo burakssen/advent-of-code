@@ -11,6 +11,8 @@ I have multiple solution with different languages. Each language on its own fold
 
 <p align="center"><img src="language_distribution.svg" /></p>
 
+`Important: The language distribution does not include the CMake and Make build systems languages`
+
 ## Years
 
 | Year            |

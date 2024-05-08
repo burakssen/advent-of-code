@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     }
 
     std::string line;
-    bool lights[1000 * 1000] = {false};
+    int lights[1000 * 1000] = {0};
 
     while (std::getline(file, line))
     {
@@ -41,16 +41,13 @@ int main(int argc, char **argv)
 
         get_action(line, action, startx, starty, endx, endy);
 
+        int delta = (action == "on") ? 1 : ((action == "off") ? -1 : 2);
+
         for (int i = startx; i <= endx; i++)
         {
             for (int j = starty; j <= endy; j++)
             {
-                if (action == "on")
-                    lights[i * 1000 + j] = true;
-                else if (action == "off")
-                    lights[i * 1000 + j] = false;
-                else
-                    lights[i * 1000 + j] = !lights[i * 1000 + j];
+                lights[i * 1000 + j] = std::max(0, lights[i * 1000 + j] + delta);
             }
         }
     }

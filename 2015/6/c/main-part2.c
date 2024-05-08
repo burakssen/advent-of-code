@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     size_t len = 0;
     ssize_t read;
 
-    bool lights[1000][1000] = {false};
+    int lights[1000][1000] = {0};
 
     while ((read = getline(&line, &len, file)) != -1)
     {
@@ -45,11 +45,14 @@ int main(int argc, char **argv)
             for (int j = starty; j <= endy; j++)
             {
                 if (strcmp(action, "on") == 0)
-                    lights[i][j] = true;
+                    lights[i][j] += 1;
                 else if (strcmp(action, "off") == 0)
-                    lights[i][j] = false;
+                {
+                    if (lights[i][j] != 0)
+                        lights[i][j] -= 1;
+                }
                 else
-                    lights[i][j] = !lights[i][j];
+                    lights[i][j] += 2;
             }
         }
     }
@@ -59,12 +62,12 @@ int main(int argc, char **argv)
     {
         for (int j = 0; j < 1000; j++)
         {
-            if (lights[i][j])
-                count++;
+            if (lights[i][j] > 0)
+                count += lights[i][j];
         }
     }
 
-    printf("Lights on: %d\n", count);
+    printf("%d\n", count);
 
     free(line);
 

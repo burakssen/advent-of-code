@@ -22,7 +22,7 @@ I have multiple solution with different languages. Each language on its own fold
 | Lua         | Used                     | `1` `2` `3` `4` `5`     |
 | Php         | Used                     | `1` `2` `3` `4` `5`     |
 | Python      | Used                     | `1` `2` `3` `4` `5`     |
-| Ruby        | Used                     | `1` `2`                 |
+| Ruby        | Used                     | `1` `2` `3`             |
 | Rust        | Used                     | `1` `2` `3` `4` `5`     |
 | Swift       | Used                     | `1` `2` `3` `4` `5`     |
 | TypeScript  | Used                     | `1` `2` `3` `4` `5`     |

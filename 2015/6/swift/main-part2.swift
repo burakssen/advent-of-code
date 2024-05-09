@@ -24,7 +24,7 @@ func get_action(_ line: String) -> Action {
 func main(){
     let args = CommandLine.arguments
     if args.count < 2 {
-        print("Usage: swift main-part1.swift <input>")
+        print("Usage: swift main-part2.swift <input>")
         return
     }
 

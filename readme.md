@@ -53,19 +53,17 @@ I have multiple solution with different languages. Each language on its own fold
 
 `Important: The language distribution does not include the CMake and Make build systems languages`
 
-## Years
-
-| Year            |
-| --------------- |
-| [`2015`](#2015) |
-| [`2016`](#2016) |
-
 ### 2015
 
-- [Day 1: Not Quite Lisp](2015/1) - [Problem Day 1](https://adventofcode.com/2015/day/1)
-- [Day 2: I Was Told There Would Be No Math](2015/2) - [Problem Day 2](https://adventofcode.com/2015/day/2)
-- [Day 3: Perfectly Spherical Houses in a Vacuum](2015/3) - [Problem Day 3](https://adventofcode.com/2015/day/3)
-- [Day 4: The Ideal Stocking Stuffer](2015/4) - [Problem Day 4](https://adventofcode.com/2015/day/4)
-- [Day 5: Doesn't He Have Intern-Elves For This?](2015/5) - [Problem Day 5](https://adventofcode.com/2015/day/5)
+---
+
+- [Day 1: Not Quite Lisp](https://adventofcode.com/2015/day/1)
+- [Day 2: I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)
+- [Day 3: Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)
+- [Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
+- [Day 5: Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
+- [Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
 
 ### 2016
+
+---

@@ -11,39 +11,39 @@ I have multiple solution with different languages. Each language on its own fold
 
 <p align="center">
 
-| Language    | Used / In Future / Maybe | Days Completed          |
-| ----------- | ------------------------ | ----------------------- |
-| C           | Used                     | `1` `2` `3` `4` `5` `6` |
-| C++         | Used                     | `1` `2` `3` `4` `5` `6` |
-| Go          | Used                     | `1` `2` `3` `4` `5` `6` |
-| Haskell     | Used                     | `1` `2` `3` `4` `5`     |
-| Java        | Used                     | `1` `2` `3` `4` `5`     |
-| JavaScript  | Used                     | `1` `2` `3` `4` `5`     |
-| Lua         | Used                     | `1` `2` `3` `4` `5`     |
-| Php         | Used                     | `1` `2` `3` `4` `5`     |
-| Python      | Used                     | `1` `2` `3` `4` `5`     |
-| Ruby        | Used                     | `1` `2` `3` `4` `5`     |
-| Rust        | Used                     | `1` `2` `3` `4` `5`     |
-| Swift       | Used                     | `1` `2` `3` `4` `5`     |
-| TypeScript  | Used                     | `1` `2` `3` `4` `5`     |
-| Zig         | Used                     | `1` `2` `3` `4` `5`     |
-| Odin        | Maybe                    |                         |
-| Nim         | Maybe                    |                         |
-| Elixir      | In Future                |                         |
-| V           | In Future                |                         |
-| Vala        | In Future                |                         |
-| Julia       | In Future                |                         |
-| C#          | In Future                |                         |
-| Dart        | In Future                |                         |
-| Clojure     | Maybe                    |                         |
-| Kotlin      | In Future                |                         |
-| Lisp        | In Future                |                         |
-| R           | Maybe                    |                         |
-| Matlab      | Maybe                    |                         |
-| Perl        | Maybe                    |                         |
-| Shell       | Maybe                    |                         |
-| OCaml       | Maybe                    |                         |
-| Objective-C | Maybe                    |                         |
+| Language    | Used / In Future / Maybe | Days Completed                                                                                                                                                      |
+| ----------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C           | Used                     | [`2015/1`](./2015/1/c/) [`2015/2`](./2015/2/c) [`2015/3`](./2015/3/c/) [`2015/4`](./2015/4/c/) [`2015/5`](./2015/5/c/) [`2015/6`](./2015/6/c/)                      |
+| C++         | Used                     | [`2015/1`](./2015/1/cpp/) [`2015/2`](./2015/2/cpp) [`2015/3`](./2015/3/cpp/) [`2015/4`](./2015/4/cpp/) [`2015/5`](./2015/5/cpp/) [`2015/6`](./2015/6/cpp/)          |
+| Go          | Used                     | [`2015/1`](./2015/1/go/) [`2015/2`](./2015/2/go) [`2015/3`](./2015/3/go/) [`2015/4`](./2015/4/go/) [`2015/5`](./2015/5/go/) [`2015/6`](./2015/6/go/)                |
+| Haskell     | Used                     | [`2015/1`](./2015/1/haskell/) [`2015/2`](./2015/2/haskell) [`2015/3`](./2015/3/haskell/) [`2015/4`](./2015/4/haskell/) [`2015/5`](./2015/5/haskell/)                |
+| Java        | Used                     | [`2015/1`](./2015/1/java-impl/) [`2015/2`](./2015/2/java-impl) [`2015/3`](./2015/3/java-impl/) [`2015/4`](./2015/4/java-impl/) [`2015/5`](./2015/5/java-impl/)      |
+| JavaScript  | Used                     | [`2015/1`](./2015/1/javascript/) [`2015/2`](./2015/2/javascript) [`2015/3`](./2015/3/javascript/) [`2015/4`](./2015/4/javascript/) [`2015/5`](./2015/5/javascript/) |
+| Lua         | Used                     | [`2015/1`](./2015/1/lua/) [`2015/2`](./2015/2/lua) [`2015/3`](./2015/3/lua/) [`2015/4`](./2015/4/lua/) [`2015/5`](./2015/5/lua/)                                    |
+| Php         | Used                     | [`2015/1`](./2015/1/php/) [`2015/2`](./2015/2/php) [`2015/3`](./2015/3/php/) [`2015/4`](./2015/4/php/) [`2015/5`](./2015/5/php/)                                    |
+| Python      | Used                     | [`2015/1`](./2015/1/python/) [`2015/2`](./2015/2/python) [`2015/3`](./2015/3/python/) [`2015/4`](./2015/4/python/) [`2015/5`](./2015/5/python/)                     |
+| Ruby        | Used                     | [`2015/1`](./2015/1/ruby/) [`2015/2`](./2015/2/ruby) [`2015/3`](./2015/3/ruby/) [`2015/4`](./2015/4/ruby/) [`2015/5`](./2015/5/ruby/)                               |
+| Rust        | Used                     | [`2015/1`](./2015/1/rust/) [`2015/2`](./2015/2/rust) [`2015/3`](./2015/3/rust/) [`2015/4`](./2015/4/rust/) [`2015/5`](./2015/5/rust/)                               |
+| Swift       | Used                     | [`2015/1`](./2015/1/swift/) [`2015/2`](./2015/2/swift) [`2015/3`](./2015/3/swift/) [`2015/4`](./2015/4/swift/) [`2015/5`](./2015/5/swift/)                          |
+| TypeScript  | Used                     | [`2015/1`](./2015/1/typescript/) [`2015/2`](./2015/2/typescript) [`2015/3`](./2015/3/typescript/) [`2015/4`](./2015/4/typescript/) [`2015/5`](./2015/5/typescript/) |
+| Zig         | Used                     | [`2015/1`](./2015/1/zig/) [`2015/2`](./2015/2/zig) [`2015/3`](./2015/3/zig/) [`2015/4`](./2015/4/zig/) [`2015/5`](./2015/5/zig/)                                    |
+| Odin        | Maybe                    |                                                                                                                                                                     |
+| Nim         | Maybe                    |                                                                                                                                                                     |
+| Elixir      | In Future                |                                                                                                                                                                     |
+| V           | In Future                |                                                                                                                                                                     |
+| Vala        | In Future                |                                                                                                                                                                     |
+| Julia       | In Future                |                                                                                                                                                                     |
+| C#          | In Future                |                                                                                                                                                                     |
+| Dart        | In Future                |                                                                                                                                                                     |
+| Clojure     | Maybe                    |                                                                                                                                                                     |
+| Kotlin      | In Future                |                                                                                                                                                                     |
+| Lisp        | In Future                |                                                                                                                                                                     |
+| R           | Maybe                    |                                                                                                                                                                     |
+| Matlab      | Maybe                    |                                                                                                                                                                     |
+| Perl        | Maybe                    |                                                                                                                                                                     |
+| Shell       | Maybe                    |                                                                                                                                                                     |
+| OCaml       | Maybe                    |                                                                                                                                                                     |
+| Objective-C | Maybe                    |                                                                                                                                                                     |
 
 </p>
 

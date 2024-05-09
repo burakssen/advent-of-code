@@ -13,43 +13,76 @@
   - Build System: `CMake`
 - [Go](./go) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.22.1`
-  - Run Command: `go run main.go <input.txt>`
+  - Run Commands:
+    - Part 1: `go run main-part1.go <input.txt>`
+    - Part 2: `go run main-part2.go <input.txt>`
 - [Haskell](./haskell) [<span style="color:lightgreen">PASSED</span>]
   - Version: `9.4.8`
   - Build System: `GHC`
-  - Build Command: `ghc -o main main.hs`
-  - Run Command: `main <input.txt>`
+  - Build Commands:
+    - Part 1: `ghc -o main-part1 main-part1.hs`
+    - Part 2: `ghc -o main-part2 main-part2.hs`
+  - Run Commands:
+    - Part 1: `./main-part1 <input.txt>`
+    - Part 2: `./main-part2 <input.txt>`
 - [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
   - Version: `17.0.11`
   - Build System: `javac`
-  - Build Command: `javac Main.java`
-  - Run Command: `java Main <input.txt>`
+  - Build Commands:
+    - Part 1: `javac Part1/Main.java`
+    - Part 2: `javac Part2/Main.java`
+  - Run Commands:
+    - Part 1: `java Part1.Main <input.txt>`
+    - Part 2: `java Part2.Main <input.txt>`
 - [JavaScript](./javascript) [<span style="color:lightgreen">PASSED</span>]
   - Version: `ES6`
-  - Run Command: `node main.js <input.txt>`
+  - Run Commands:
+    - Part 1: `node main-part1.js <input.txt>`
+    - Part 2: `node main-part2.js <input.txt>`
 - [Lua](./lua) [<span style="color:lightgreen">PASSED</span>]
   - Version: `5.4.6`
-  - Run Command: `lua main.lua <input.txt>`
+  - Run Commands:
+    - Part 1: `lua main-part1.lua <input.txt>`
+    - Part 2: `lua main-part2.lua <input.txt>`
 - [PHP](./php) [<span style="color:lightgreen">PASSED</span>]
   - Version: `8.3.6`
-  - Run Command: `php main.php <input.txt>`
+  - Run Commands:
+    - Part 1: `php main-part1.php <input.txt>`
+    - Part 2: `php main-part2.php <input.txt>`
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
-  - Run Command: `python main.py <input.txt>`
+  - Run Commands:
+    - Part 1: `python3 main-part1.py <input.txt>`
+    - Part 2: `python3 main-part2.py <input.txt>`
+- [Ruby](./ruby) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `2.6.10p210`
+  - Run Commands:
+    - Part 1: `ruby main-part1.rb <input.txt>`
+    - Part 2: `ruby main-part2.rb <input.txt>`
 - [Rust](./rust) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.77.2`
   - Build System: `Cargo`
   - Build Command: `cargo build`
-  - Run Command: `cargo run <input.txt>`
+  - Run Commands:
+    - Part 1: `cargo run --bin part1 <input.txt>`
+    - Part 2: `cargo run --bin part2 <input.txt>`
 - [Swift](./swift) [<span style="color:lightgreen">PASSED</span>]
   - Version: `5.10.1`
-  - Run Command: `swift main.swift <input.txt>`
+  - Run Commands:
+    - Part 1: `swift main-part1.swift <input.txt>`
+    - Part 2: `swift main-part2.swift <input.txt>`
 - [TypeScript](./typescript) [<span style="color:lightgreen">PASSED</span>]
   - Version: `ES6`
   - Build System: `tsc`
-  - Build Command: `tsc main.ts`
-  - Run Command: `node main.js <input.txt>`
+  - Build Commands:
+    - Part 1: `tsc main-part1.ts`
+    - Part 2: `tsc main-part2.ts`
+  - Run Commands:
+    - Part 1: `node main-part1.js <input.txt>`
+    - Part 2: `node main-part2.js <input.txt>`
 - [Zig](./zig) [<span style="color:lightgreen">PASSED</span>]
   - Version: `0.12.0`
   - Build System: `Zig`
-  - Run Command: `zig run main.zig -- <input.txt>`
+  - Run Commands:
+    - Part 1: `zig run main-part1.zig -- <input.txt>`
+    - Part 2: `zig run main-part2.zig -- <input.txt>`

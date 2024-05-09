@@ -34,6 +34,9 @@
 - [Python](./python) [<span style="color:lightgreen">PASSED</span>]
   - Version: `3.12.3`
   - Run Command: `python main.py <input.txt>`
+- [Ruby](./ruby) [<span style="color:lightgreen">PASSED</span>]
+  - Version: `2.6.10p210`
+  - Run Command: `ruby main.rb <input.txt>`
 - [Rust](./rust) [<span style="color:lightgreen">PASSED</span>]
   - Version: `1.77.2`
   - Build System: `Cargo`

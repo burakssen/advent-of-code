@@ -1,4 +1,4 @@
-function get_action(line)
+local function get_action(line)
     local words = {}
 
     for word in line:gmatch("%w+") do
@@ -24,7 +24,7 @@ function get_action(line)
     end
 end
 
-function main()
+local function main()
     if #arg < 1 then
         print("Usage: lua main-part1.lua <input.txt>")
         os.exit(1)
@@ -33,6 +33,12 @@ function main()
     local filename = arg[1]
 
     local file = io.open(filename, "r")
+
+    if file == nil then
+        print("Error: could not open file")
+        os.exit(1)
+    end
+
     local data = file:read("*all")
 
     local grid = {}

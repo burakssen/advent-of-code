@@ -9,6 +9,12 @@ def main()
 
     filename = args[0]
     file = File.open(filename, "r")
+
+    if file.nil?
+        puts "Could not open file"
+        exit 1
+    end
+
     lines = file.readlines
     file.close
 

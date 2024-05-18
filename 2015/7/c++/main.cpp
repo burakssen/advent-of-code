@@ -55,6 +55,11 @@ int main(int argc, char **argv)
     int a = evaluate("a");
     std::cout << "Part 1: " << a << std::endl;
 
+    wires.clear();
+    wires["b"] = a;
+    a = evaluate("a");
+    std::cout << "Part 2: " << a << std::endl;
+
     file.close();
 
     return EXIT_SUCCESS;

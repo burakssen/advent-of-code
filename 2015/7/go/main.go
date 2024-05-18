@@ -65,6 +65,13 @@ func main() {
 	a_val := Evaluate("a")
 	fmt.Println("Part 1:", a_val)
 
+	// Part 2
+	hashmap = make(map[string]int)
+	hashmap["b"] = a_val
+	a_val = Evaluate("a")
+	fmt.Println("Part 2:", a_val)
+}
+
 func InsertInstruction(line string) {
 	var instruction Instruction
 

@@ -88,6 +88,10 @@ int main(int argc, char **argv)
 
     char val[10];
     sprintf(val, "%d", signal_a);
+    set_instruction_val("b", val);
+
+    signal_a = eval(get_instruction("a"));
+    printf("Part2: %d\n", signal_a);
 
     free_hash_table();
 

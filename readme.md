@@ -13,7 +13,7 @@ I have multiple solution with different languages. Each language on its own fold
 
 | Language    | Used / In Future / Maybe | Days Completed                                                                                                                                                                                       |
 | ----------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| C           | Used                     | [`2015/1`](./2015/1/c/) [`2015/2`](./2015/2/c) [`2015/3`](./2015/3/c/) [`2015/4`](./2015/4/c/) [`2015/5`](./2015/5/c/) [`2015/6`](./2015/6/c/)                                                       |
+| C           | Used                     | [`2015/1`](./2015/1/c/) [`2015/2`](./2015/2/c) [`2015/3`](./2015/3/c/) [`2015/4`](./2015/4/c/) [`2015/5`](./2015/5/c/) [`2015/6`](./2015/6/c/) [`2015/7`](./2015/7/c/)                               |
 | C++         | Used                     | [`2015/1`](./2015/1/cpp/) [`2015/2`](./2015/2/cpp) [`2015/3`](./2015/3/cpp/) [`2015/4`](./2015/4/cpp/) [`2015/5`](./2015/5/cpp/) [`2015/6`](./2015/6/cpp/)                                           |
 | Go          | Used                     | [`2015/1`](./2015/1/go/) [`2015/2`](./2015/2/go) [`2015/3`](./2015/3/go/) [`2015/4`](./2015/4/go/) [`2015/5`](./2015/5/go/) [`2015/6`](./2015/6/go/)                                                 |
 | Haskell     | Used                     | [`2015/1`](./2015/1/haskell/) [`2015/2`](./2015/2/haskell) [`2015/3`](./2015/3/haskell/) [`2015/4`](./2015/4/haskell/) [`2015/5`](./2015/5/haskell/) [`2015/6`](./2015/6/haskell/)                   |
@@ -63,6 +63,7 @@ I have multiple solution with different languages. Each language on its own fold
 - [Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
 - [Day 5: Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
 - [Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
+- [Day 7: Some Assembly Required](https://adventofcode.com/2015/day/7)
 
 ### 2016
 

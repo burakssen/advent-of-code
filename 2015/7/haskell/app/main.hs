@@ -32,7 +32,9 @@ processFile reader filename = do
   let ls = lines contents
   let instructions = parseInstructions ls
   let (result, _) = eval "a" instructions HashMap.empty
+  let (result2, _) = eval "a" (Instruction (ASSIGN (show result)) "b" : instructions) HashMap.empty
   putStrLn $ "Part 1: " ++ show result
+  putStrLn $ "Part 2: " ++ show result2
 
 parseInstructions :: [String] -> [Instruction]
 parseInstructions = Prelude.map parseInstruction
@@ -88,36 +90,3 @@ evalExpr s instrs hm = case reads s of
   _ ->
     let (result, newHm) = eval s instrs hm
      in (result, newHm)
-
-import Data.Bits (complement, shiftL, shiftR, (.&.), (.|.))
-import Data.HashMap.Strict qualified as HashMap
-import System.Environment (getArgs)
-
-data InstructionType
-  = ASSIGN String
-  | AND String String
-  | OR String String
-  | LSHIFT String String
-  | RSHIFT String String
-  | NOT String
-  deriving (Show)
-
-data Instruction = Instruction
-  { instructionType :: InstructionType,
-    result :: String
-  }
-  deriving (Show)
-
-main :: IO ()
-main = do
-  args <- getArgs
-  case args of
-    [filename] -> processFile readFile filename
-    _ -> putStrLn "Usage: cabal run . -- <input.txt>"
-
-processFile :: (FilePath -> IO String) -> FilePath -> IO ()
-processFile reader filename = do
-  contents <- reader filename
-  let ls = lines contents
-  let instructions = parseInstructions ls
-  let (result, _) = eval "a" instructions HashMap.empty

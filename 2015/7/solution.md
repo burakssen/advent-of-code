@@ -13,9 +13,9 @@
   - Run Command: `go run main.go <input.txt>`
 - [Haskell](./haskell) [<span style="color:lightgreen">PASSED</span>]
   - Version: `9.4.8`
-  - Build System: `GHC`
-  - Build Command: `ghc -o main main.hs`
-  - Run Command: `main <input.txt>`
+  - Build System: `cabal`
+  - Build Command: `cabal build`
+  - Run Command: `cabal run . -- ../input.txt`
 - [Java](./java-impl) [<span style="color:lightgreen">PASSED</span>]
   - Version: `17.0.11`
   - Build System: `javac`

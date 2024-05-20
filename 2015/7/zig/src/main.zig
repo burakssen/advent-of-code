@@ -202,9 +202,15 @@ pub fn main() !void {
         try buffers.append(line_buffer);
     }
 
-    const a = eval("a");
-
+    var a = eval("a");
     try stdout.print("Part 1: {d}\n", .{a});
+    hash_map.clearRetainingCapacity();
+    hash_map.put("b", a) catch {
+        std.debug.print("Failed to insert key: {s} value: {d}\n", .{ "b", a });
+    };
+    a = eval("a");
+    try stdout.print("Part 2: {d}\n", .{a});
+
     for (0..buffers.items.len) |i| {
         buffers.items[i].deinit();
     }

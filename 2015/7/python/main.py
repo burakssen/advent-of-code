@@ -98,6 +98,12 @@ def main():
     a = eval("a")
     print(f"Part 1: {a}")
 
+    # part 2
+    hash_table.clear()
+    hash_table["b"] = a
+    a = eval("a")
+    print(f"Part 2: {a}")
+            
 
 
 

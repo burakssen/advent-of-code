@@ -120,6 +120,9 @@ def main()
 
     a = eval("a")
     puts "Part 1: #{a}"
+    $wires = {"b" => a}
+    a = eval("a")
+    puts "Part 2: #{a}"
 
 
 end

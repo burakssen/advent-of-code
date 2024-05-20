@@ -140,6 +140,10 @@ function main() {
 
   let a = evaluate("a");
   console.log("Part 1: " + a);
+  wires.clear();
+  wires.set("b", a);
+  a = evaluate("a");
+  console.log("Part 2: " + a);
 }
 
 main();

@@ -72,6 +72,10 @@ function main(){
 
     let a = eval("a");
     console.log("Part 1: " + a);
+    hashTable = {};
+    hashTable["b"] = a;
+    a = eval("a");
+    console.log("Part 2: " + a);
 }
 
 

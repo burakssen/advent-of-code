@@ -54,6 +54,10 @@ fn main() {
 
     let a = eval("a", &instructions, &mut wires);
     println!("Part 1: {}", a);
+    wires.clear();
+    wires.insert("b".to_string(), a);
+    let a = eval("a", &instructions, &mut wires);
+    println!("Part 2: {}", a);
 }
 
 fn eval(target: &str, instructions: &[Instruction], wires: &mut HashMap<String, u16>) -> u16 {

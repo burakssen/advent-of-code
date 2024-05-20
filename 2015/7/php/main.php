@@ -144,6 +144,10 @@ function main(){
 
     $a = evaluate("a");
     echo "Part 1: $a\n";
+    global $hashmap;    
+    $hashmap = array("b" => $a);
+    $result = evaluate("a");
+    echo "Part 2: $result\n";
 }
 
 main();

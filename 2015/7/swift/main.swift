@@ -113,6 +113,10 @@ func main() {
 
     var a = eval(target: "a")
     print("Part 1: \(a)")
+    wires = [:]
+    wires = ["b": a]
+    a = eval(target: "a")
+    print("Part 2: \(a)")
 }
 
 main()

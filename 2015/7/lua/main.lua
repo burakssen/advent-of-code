@@ -134,6 +134,11 @@ local function main()
 
     local a = get_signal("a")
     print("Part 1: " .. a)
+
+    Wires = {}
+    Wires["b"] = a
+    a = get_signal("a")
+    print("Part 2: " .. a)
 end
 
 main()

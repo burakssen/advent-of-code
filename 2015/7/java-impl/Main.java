@@ -131,6 +131,10 @@ public class Main {
             Integer a_result = eval("a");
             System.out.println("Part 1: " + a_result);
 
+            registers.clear();
+            registers.put("b", a_result);
+            Integer a_result_part2 = eval("a");
+            System.out.println("Part 2: " + a_result_part2);
 
             scanner.close();
         } catch (Exception e) {

@@ -59,39 +59,19 @@ I have multiple solution with different languages. Each language on its own fold
   | [`C`](./2015/7/c/) [`C++`](2015/7/c++/) [`Go`](2015/7/go/) [`Haskell`](2015/7/haskell/) [`Java`](2015/7/java-impl/) [`Javascript`](2015/7/javascript/) [`Lua`](2015/7/lua/) [`Php`](2015/7/php) [`Python`](2015/7/python) [`Ruby`](2015/7/ruby) [`Rust`](2015/7/rust) [`Swift`](2015/7/swift) [`Typescript`](2015/7/typescript) [`Zig`](2015/7/zig) |
 
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
-| Language | Status |
-| --- | --- |
-| C | ✅ |
-| C++ | ✅ |
-| Go | ✅ |
-| Haskell | ✅ |
-| Java | ✅ |
-| Javascript | ✅ |
-| Lua | ✅ |
-| Php | ✅ |
-| Python | ✅ |
-| Ruby | ✅ |
-| Rust | ✅ |
-| Swift | ✅ |
-| Typescript | ✅ |
-| Zig | ✅ |
-| Odin | |
-| Nim | |
-| Elixir | |
-| V | |
-| Vala | |
-| Julia | |
-| C# | |
-| Dart | |
-| Clojure | |
-| Kotlin | |
-| Lisp | |
-| R | |
-| Matlab | |
-| Perl | |
-| Shell | |
-| OCaml | |
-| Objective-C | |
+| Language | Status | Language | Status | Language | Status |
+| --- | --- | --- | --- | --- | --- |
+| C | ✅ | Go | ✅ | Haskell | ✅ |
+| C++ | ✅ | Java | ✅ | Javascript | ✅ |
+| Lua | ✅ | Php | ✅ | Python | ✅ |
+| Ruby | ✅ | Rust | ✅ | Swift | ✅ |
+| Typescript | ✅ | Zig | ✅ |||
+| Odin | ❌ | Nim |❌ | Elixir |❌ |
+| V | ❌| Vala |❌ | Julia | ❌|
+| C# |❌ | Dart | ❌| Clojure | ❌|
+| Kotlin | ❌| Lisp |❌ | R |❌|
+| Matlab | ❌| Perl |❌ | Shell |❌ |
+| OCaml | ❌| Objective-C | ❌| | |
 
 </p>
 

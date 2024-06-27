@@ -61,20 +61,20 @@ I have multiple solution with different languages. Each language on its own fold
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
 | Language | Status |
 | --- | --- |
-| C | :heavy_check_mark: |
-| C++ | :heavy_check_mark: |
-| Go | :heavy_check_mark: |
-| Haskell | :heavy_check_mark: |
-| Java | :heavy_check_mark: |
-| Javascript | :heavy_check_mark: |
-| Lua | :heavy_check_mark: |
-| Php | :heavy_check_mark: |
-| Python | :heavy_check_mark: |
-| Ruby | :heavy_check_mark: |
-| Rust | :heavy_check_mark: |
-| Swift | :heavy_check_mark: |
-| Typescript | :heavy_check_mark: |
-| Zig | :heavy_check_mark: |
+| C | ✅ |
+| C++ | ✅ |
+| Go | ✅ |
+| Haskell | ✅ |
+| Java | ✅ |
+| Javascript | ✅ |
+| Lua | ✅ |
+| Php | ✅ |
+| Python | ✅ |
+| Ruby | ✅ |
+| Rust | ✅ |
+| Swift | ✅ |
+| Typescript | ✅ |
+| Zig | ✅ |
 | Odin | |
 | Nim | |
 | Elixir | |

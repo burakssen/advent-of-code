@@ -62,19 +62,3 @@ I have multiple solution with different languages. Each language on its own fold
 <p align="center"><img src="language_distribution.svg" /></p>
 
 `Important: The language distribution does not include the CMake and Make build systems languages`
-
-### 2015
-
----
-
-- [Day 1: Not Quite Lisp](https://adventofcode.com/2015/day/1)
-- [Day 2: I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)
-- [Day 3: Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)
-- [Day 4: The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)
-- [Day 5: Doesn't He Have Intern-Elves For This?](https://adventofcode.com/2015/day/5)
-- [Day 6: Probably a Fire Hazard](https://adventofcode.com/2015/day/6)
-- [Day 7: Some Assembly Required](https://adventofcode.com/2015/day/7)
-
-### 2016
-
----

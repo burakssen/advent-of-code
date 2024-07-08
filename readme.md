@@ -28,8 +28,8 @@ I have multiple solution with different languages. Each language on its own fold
 | Language     | Days                                                                                                                                                                           |
 | :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `C`          | [`1`](2015/1/c) [`2`](2015/2/c) [`3`](2015/3/c) [`4`](2015/4/c) [`5`](2015/5/c) [`6`](2015/6/c) [`7`](2015/7/c)                                                                |
-| `C#`         | [`1`](2015/1/c#)                                                                                                                                                               |
 | `C++`        | [`1`](2015/1/c++) [`2`](2015/2/c++) [`3`](2015/3/c++) [`4`](2015/4/c++) [`5`](2015/5/c++) [`6`](2015/6/c++) [`7`](2015/7/c++)                                                  |
+| `C#`         | [`1`](2015/1/csharp)                                                                                                                                                           |
 | `Go`         | [`1`](2015/1/go) [`2`](2015/2/go) [`3`](2015/3/go) [`4`](2015/4/go) [`5`](2015/5/go) [`6`](2015/6/go) [`7`](2015/7/go)                                                         |
 | `Haskell`    | [`1`](2015/1/haskell) [`2`](2015/2/haskell) [`3`](2015/3/haskell) [`4`](2015/4/haskell) [`5`](2015/5/haskell) [`6`](2015/6/haskell) [`7`](2015/7/haskell)                      |
 | `Java`       | [`1`](2015/1/java-impl) [`2`](2015/2/java-impl) [`3`](2015/3/java-impl) [`4`](2015/4/java-impl) [`5`](2015/5/java-impl) [`6`](2015/6/java-impl) [`7`](2015/7/java-impl)        |
@@ -46,7 +46,7 @@ I have multiple solution with different languages. Each language on its own fold
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
 | Language | Status | Language | Status | Language | Status |
 | --- | --- | --- | --- | --- | --- |
-| `C` | ✅ | `C#` | ✅ | `C++` | ✅ |
+| `C` | ✅ | `C++` | ✅ |`C#` | ✅ |
 | `Go` | ✅ | `Haskell` | ✅ | `Java` | ✅ |
 | `Javascript` | ✅ | `Lua` | ✅ | `Php` | ✅ |
 | `Python` | ✅ | `Ruby` | ✅ | `Rust` | ✅ |

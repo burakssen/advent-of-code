@@ -9,9 +9,9 @@ I have multiple solution with different languages. Each language on its own fold
 
 ## Languages
 
-| Year            | Languages                                                                                                  |
-| --------------- | ---------------------------------------------------------------------------------------------------------- |
-| [`2015`](#2015) | `C` `C++` `Go` `Haskell` `Java` `Javascript` `Lua` `Php` `Python` `Ruby` `Rust` `Swift` `Typescript` `Zig` |
+| Year            | Languages                                                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------------------------- |
+| [`2015`](#2015) | `C` `C#` `C++` `Go` `Haskell` `Java` `Javascript` `Lua` `Php` `Python` `Ruby` `Rust` `Swift` `Typescript` `Zig` |
 
 ### 2015
 
@@ -45,17 +45,17 @@ I have multiple solution with different languages. Each language on its own fold
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
 | Language | Status | Language | Status | Language | Status |
 | --- | --- | --- | --- | --- | --- |
-| C | ✅ | Go | ✅ | Haskell | ✅ |
-| C++ | ✅ | Java | ✅ | Javascript | ✅ |
-| Lua | ✅ | Php | ✅ | Python | ✅ |
-| Ruby | ✅ | Rust | ✅ | Swift | ✅ |
-| Typescript | ✅ | Zig | ✅ |||
-| Odin | ❌ | Nim |❌ | Elixir |❌ |
-| V | ❌| Vala |❌ | Julia | ❌|
-| C# |❌ | Dart | ❌| Clojure | ❌|
-| Kotlin | ❌| Lisp |❌ | R |❌|
-| Matlab | ❌| Perl |❌ | Shell |❌ |
-| OCaml | ❌| Objective-C | ❌| | |
+| `C` | ✅ | `C#` | ✅ | `C++` | ✅ |
+| `Go` | ✅ | `Haskell` | ✅ | `Java` | ✅ |
+| `Javascript` | ✅ | `Lua` | ✅ | `Php` | ✅ |
+| `Python` | ✅ | `Ruby` | ✅ | `Rust` | ✅ |
+| `Swift` | ✅ | `Typescript` | ✅ | `Zig` | ✅ |
+| `Odin` | ❌ | `Nim` | ❌ | `Elixir` | ❌ |
+| `V` | ❌ | `Vala` | ❌ | `Julia` | ❌ |
+| `Dart` | ❌ | `Clojure` | ❌ | `Kotlin` | ❌ |
+| `Lisp` | ❌ | `R` | ❌ | `Matlab` | ❌ |
+| `Perl`| ❌ | `Bash` | ❌ | `OCaml` | ❌ |
+| `Objective-C` | ❌ | | | | |
 
 ## Language Distribution
 

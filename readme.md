@@ -34,6 +34,9 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 13: Knights of the Dinner Table](https://adventofcode.com/2015/day/13)          |
 | [Day 14: Reindeer Olympics](https://adventofcode.com/2015/day/14)                    |
 | [Day 15: Science for Hungry People](https://adventofcode.com/2015/day/15)            |
+| [Day 16: Aunt Sue](https://adventofcode.com/2015/day/16)                             |
+| [Day 17: No Such Thing as Too Much](https://adventofcode.com/2015/day/17)            |
+| [Day 18: Like a GIF For Your Yard](https://adventofcode.com/2015/day/18)             |
 
 ### Solutions
 

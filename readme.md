@@ -19,6 +19,8 @@ I have multiple solution with different languages. Each language on its own fold
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`2015`](#2015) | [`C`](./2015/c/) [`C#`](./2015/c#/) [`C++`](./2015/c++/) [`Go`](./2015/go/) [`Haskell`](./2015/haskell/) [`Java`](./2015/java/) [`Javascript`](./2015/javascript/) [`Lua`](./2015/lua/) [`Php`](./2015/php/) [`Python`](./2015/python/) [`Ruby`](./2015/ruby/) [`Rust`](./2015/rust/) [`Swift`](./2015/swift/) [`Typescript`](./2015/typescript/) [`Zig`](./2015/zig/) |
 
+| [`2016`](#2016) | [`C`](./2016/c/) |
+
 ## 2015
 
 ### Problems
@@ -70,6 +72,22 @@ I have multiple solution with different languages. Each language on its own fold
 | `Swift`      | [`1`](./2015/swift/1/) [`2`](./2015/swift/2/) [`3`](./2015/swift/3/) [`4`](./2015/swift/4/) [`5`](./2015/swift/5/) [`6`](./2015/swift/6/) [`7`](./2015/swift/7/)                                                                                                                                                                                                                                                                                                                                                           |
 | `Typescript` | [`1`](./2015/typescript/1/) [`2`](./2015/typescript/2/) [`3`](./2015/typescript/3/) [`4`](./2015/typescript/4/) [`5`](./2015/typescript/5/) [`6`](./2015/typescript/6/) [`7`](./2015/typescript/7/)                                                                                                                                                                                                                                                                                                                        |
 | `Zig`        | [`1`](./2015/zig/1/) [`2`](./2015/zig/2/) [`3`](./2015/zig/3/) [`4`](./2015/zig/4/) [`5`](./2015/zig/5/) [`6`](./2015/zig/6/) [`7`](./2015/zig/7/)                                                                                                                                                                                                                                                                                                                                                                         |
+
+## 2016
+
+### Problems
+
+| Problems                                                            |
+| :------------------------------------------------------------------ |
+| [Day 1: No Time for a Taxicab](https://adventofcode.com/2016/day/1) |
+
+### Solutions
+
+| Language | Days               |
+| -------- | ------------------ |
+| `C`      | [`1`](./2016/c/1/) |
+
+# Language Support
 
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
 | Language | Status | Language | Status | Language | Status |

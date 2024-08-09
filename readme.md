@@ -79,12 +79,14 @@ I have multiple solution with different languages. Each language on its own fold
 | Problems                                                            |
 | :------------------------------------------------------------------ |
 | [Day 1: No Time for a Taxicab](https://adventofcode.com/2016/day/1) |
+| [Day 2: Bathroom Security](https://adventofcode.com/2016/day/2)     |
 
 ### Solutions
 
-| Language | Days               |
-| -------- | ------------------ |
-| `C`      | [`1`](./2016/c/1/) |
+| Language | Days                                      |
+| -------- | ----------------------------------------- |
+| `C`      | [`1`](./2016/c/1/)                        |
+| `C++`    | [`1`](./2016/c++/1/) [`2`](./2016/c++/2/) |
 
 # Language Support
 

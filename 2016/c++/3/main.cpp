@@ -59,5 +59,7 @@ int main(int argc, char **argv)
     std::cout << "Part 1: " << part1_count << std::endl;
     std::cout << "Part 2: " << part2_count << std::endl;
 
+    file.close();
+
     return EXIT_SUCCESS;
 }

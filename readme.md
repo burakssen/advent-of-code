@@ -76,17 +76,23 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                            |
-| :------------------------------------------------------------------ |
-| [Day 1: No Time for a Taxicab](https://adventofcode.com/2016/day/1) |
-| [Day 2: Bathroom Security](https://adventofcode.com/2016/day/2)     |
+| Problems                                                                      |
+| :---------------------------------------------------------------------------- |
+| [Day 1: No Time for a Taxicab](https://adventofcode.com/2016/day/1)           |
+| [Day 2: Bathroom Security](https://adventofcode.com/2016/day/2)               |
+| [Day 3: Squares With Three Sides](https://adventofcode.com/2016/day/3)        |
+| [Day 4: Security Through Obscurity](https://adventofcode.com/2016/day/4)      |
+| [Day 5: How About a Nice Game of Chess?](https://adventofcode.com/2016/day/5) |
+| [Day 6: Signals and Noise](https://adventofcode.com/2016/day/6)               |
+| [Day 7: Internet Protocol Version 7](https://adventofcode.com/2016/day/7)     |
+| [Day 8: Two-Factor Authentication](https://adventofcode.com/2016/day/8)       |
 
 ### Solutions
 
-| Language | Days                                      |
-| -------- | ----------------------------------------- |
-| `C`      | [`1`](./2016/c/1/)                        |
-| `C++`    | [`1`](./2016/c++/1/) [`2`](./2016/c++/2/) |
+| Language | Days                                                                                                                                                                    |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `C`      | [`1`](./2016/c/1/)                                                                                                                                                      |
+| `C++`    | [`1`](./2016/c++/1/) [`2`](./2016/c++/2/) [`3`](./2016/c++/3/) [`4`](./2016/c++/4/) [`5`](./2016/c++/5/) [`6`](./2016/c++/6/) [`7`](./2016/c++/7/) [`8`](./2016/c++/8/) |
 
 # Language Support
 

@@ -13,5 +13,4 @@ clean:
 	rm -f main-part-1 main-part-1.o main-part-2 main-part-2.o
 
 run: all
-	./main-part-1 ../../../inputs/2015/6.txt
-	./main-part-2 ../../../inputs/2015/6.txt
+	./main-part-1 ../../../inputs/2015/6.txt && ./main-part-2 ../../../inputs/2015/6.txt

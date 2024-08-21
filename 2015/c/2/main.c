@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cmpfunc(const void *a, const void *b)
-{
-    return (*(int *)a - *(int *)b);
-}
-
 int main(int argc, char **argv)
 {
     if (argc < 2)
@@ -14,48 +9,28 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    char *filename = argv[1];
-    FILE *file = fopen(filename, "r");
-    if (file == NULL)
+    FILE *file = fopen(argv[1], "r");
+    if (!file)
     {
-        printf("Error: Could not open file %s\n", filename);
+        printf("Error: Could not open file %s\n", argv[1]);
         return 1;
     }
 
-    int paper_size = 0;
-    int ribbon_length = 0;
-    // loop each line in the file (each line has 3 values and they are separated by a x)
+    int paper_size = 0, ribbon_length = 0, a, b, c;
     char line[256];
+
     while (fgets(line, sizeof(line), file))
     {
-        int a, b, c;
         sscanf(line, "%dx%dx%d", &a, &b, &c);
 
-        // calculate the area of the box
-        int area = 2 * a * b + 2 * b * c + 2 * c * a;
+        // Calculate the area and the smallest side in one pass
+        int ab = a * b, bc = b * c, ca = c * a;
+        int smallest = ab < bc ? (ab < ca ? ab : ca) : (bc < ca ? bc : ca);
+        paper_size += 2 * (ab + bc + ca) + smallest;
 
-        // find the smallest side
-        int smallest = a * b;
-        if (b * c < smallest)
-        {
-            smallest = b * c;
-        }
-        if (c * a < smallest)
-        {
-            smallest = c * a;
-        }
-
-        int values[3] = {a, b, c};
-
-        qsort(values, 3, sizeof(int), cmpfunc);
-        int small1 = values[0];
-        int small2 = values[1];
-
-        int length = 2 * small1 + 2 * small2 + a * b * c;
-        ribbon_length += length;
-        // add the area of the smallest side
-        area += smallest;
-        paper_size += area;
+        // Calculate ribbon length
+        int min_perimeter = 2 * (a + b + c - (a > b ? (a > c ? a : c) : (b > c ? b : c)));
+        ribbon_length += min_perimeter + a * b * c;
     }
 
     printf("Part 1: %d\n", paper_size);

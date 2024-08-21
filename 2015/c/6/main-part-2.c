@@ -3,73 +3,70 @@
 #include <stdbool.h>
 #include <string.h>
 
-void get_action(char *line, char *action, int *startx, int *starty, int *endx, int *endy)
+#define GRID_SIZE 1000
+#define LINE_SIZE 256
+#define ACTION_SIZE 10
+
+// Parse the action and coordinates from the input line
+void parse_action(const char *line, char *action, int *startx, int *starty, int *endx, int *endy)
 {
-    char turn[10];
-    if (line[0] == 't' && line[1] == 'u')
-        sscanf(line, "%s %s %d,%d through %d,%d", turn, action, startx, starty, endx, endy);
+    if (strncmp(line, "toggle", 6) == 0)
+        sscanf(line, "toggle %d,%d through %d,%d", startx, starty, endx, endy);
     else
-        sscanf(line, "%s %d,%d through %d,%d", action, startx, starty, endx, endy);
+        sscanf(line, "turn %s %d,%d through %d,%d", action, startx, starty, endx, endy);
 }
 
 int main(int argc, char **argv)
 {
     if (argc < 2)
     {
-        printf("Usage: %s <input.txt>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <input.txt>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
     FILE *file = fopen(argv[1], "r");
-    if (file == NULL)
+    if (!file)
     {
-        printf("Error: Unable to open file %s\n", argv[1]);
+        perror("Error opening file");
         return EXIT_FAILURE;
     }
 
-    char *line = NULL;
-    size_t len = 0;
-    ssize_t read;
+    int lights[GRID_SIZE][GRID_SIZE] = {0};
+    char line[LINE_SIZE];
 
-    int lights[1000][1000] = {0};
-
-    while ((read = getline(&line, &len, file)) != -1)
+    while (fgets(line, sizeof(line), file))
     {
-        char action[10];
+        char action[ACTION_SIZE] = {0};
         int startx, starty, endx, endy;
 
-        get_action(line, action, &startx, &starty, &endx, &endy);
+        parse_action(line, action, &startx, &starty, &endx, &endy);
 
         for (int i = startx; i <= endx; i++)
         {
             for (int j = starty; j <= endy; j++)
             {
-                if (strcmp(action, "on") == 0)
-                    lights[i][j] += 1;
-                else if (strcmp(action, "off") == 0)
-                {
-                    if (lights[i][j] != 0)
-                        lights[i][j] -= 1;
-                }
+                if (strncmp(action, "on", 2) == 0)
+                    lights[i][j]++;
+                else if (strncmp(action, "off", 3) == 0)
+                    lights[i][j] = lights[i][j] > 0 ? lights[i][j] - 1 : 0;
                 else
                     lights[i][j] += 2;
             }
         }
     }
 
-    int count = 0;
-    for (int i = 0; i < 1000; i++)
+    fclose(file);
+
+    // Calculate total brightness
+    int total_brightness = 0;
+    for (int i = 0; i < GRID_SIZE; i++)
     {
-        for (int j = 0; j < 1000; j++)
+        for (int j = 0; j < GRID_SIZE; j++)
         {
-            if (lights[i][j] > 0)
-                count += lights[i][j];
+            total_brightness += lights[i][j];
         }
     }
 
-    printf("Part 2: %d\n", count);
-
-    free(line);
-
+    printf("Part 2: %d\n", total_brightness);
     return EXIT_SUCCESS;
 }

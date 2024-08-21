@@ -1,72 +1,76 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Santa
+#define OFFSET 500
+#define GRID_SIZE 1000
+
+void update_position(int *x, int *y, char direction)
 {
-    int x;
-    int y;
-};
+    switch (direction)
+    {
+    case '^':
+        (*y)++;
+        break;
+    case 'v':
+        (*y)--;
+        break;
+    case '>':
+        (*x)++;
+        break;
+    case '<':
+        (*x)--;
+        break;
+    }
+}
 
 int main(int argc, char **argv)
 {
     if (argc < 2)
     {
-        printf("Usage: %s <input_file>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
-    char *filename = argv[1];
-
-    FILE *file = fopen(filename, "r");
-    if (file == NULL)
+    FILE *file = fopen(argv[1], "r");
+    if (!file)
     {
-        printf("Error: Could not open file %s\n", filename);
+        perror("Error opening file");
         return EXIT_FAILURE;
     }
 
-    struct Santa santa = {0, 0};
-    struct Santa robo_santa = {0, 0};
+    int x_santa = 0, y_santa = 0;
+    int x_robo_santa = 0, y_robo_santa = 0;
+    int grid[GRID_SIZE][GRID_SIZE] = {0};
+    grid[x_santa + OFFSET][y_santa + OFFSET] = 1;
+    grid[x_robo_santa + OFFSET][y_robo_santa + OFFSET] = 1;
 
-    char c;
-
-    int grid[1000][1000] = {0};
-    grid[santa.x + 499][santa.y + 499] = 1;
-    grid[robo_santa.x + 499][robo_santa.y + 499] = 1;
-
-    int santa_turn = 1;
+    int is_santa_turn = 1;
+    int c;
 
     while ((c = fgetc(file)) != EOF)
     {
-        struct Santa *current_santa = santa_turn ? &santa : &robo_santa;
-
-        switch (c)
+        if (is_santa_turn)
         {
-        case '^':
-            current_santa->y++;
-            break;
-        case 'v':
-            current_santa->y--;
-            break;
-        case '>':
-            current_santa->x++;
-            break;
-        case '<':
-            current_santa->x--;
-            break;
-        default:
-            break;
+            update_position(&x_santa, &y_santa, c);
+            grid[x_santa + OFFSET][y_santa + OFFSET] = 1;
+        }
+        else
+        {
+            update_position(&x_robo_santa, &y_robo_santa, c);
+            grid[x_robo_santa + OFFSET][y_robo_santa + OFFSET] = 1;
         }
 
-        grid[current_santa->x + 499][current_santa->y + 499]++;
-        santa_turn = !santa_turn;
+        is_santa_turn = !is_santa_turn;
     }
 
+    fclose(file);
+
     int count = 0;
-    for (int i = 0; i < 1000; i++)
+    for (int i = 0; i < GRID_SIZE; i++)
     {
-        for (int j = 0; j < 1000; j++)
+        for (int j = 0; j < GRID_SIZE; j++)
         {
-            if (grid[i][j] > 0)
+            if (grid[i][j])
             {
                 count++;
             }
@@ -74,6 +78,5 @@ int main(int argc, char **argv)
     }
 
     printf("Part 2: %d\n", count);
-
     return EXIT_SUCCESS;
 }

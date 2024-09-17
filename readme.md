@@ -1,3 +1,9 @@
+<style>
+    table {
+        width: 100%;
+    }
+</style>
+
 # Advent Of Code
 
 This repository contains my solutions for the [Advent of Code](https://adventofcode.com/) challenges.

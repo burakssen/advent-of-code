@@ -125,13 +125,14 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 5: A Maze of Twisty Trampolines, All Alike](https://adventofcode.com/2017/day/5) |
 | [Day 6: Memory Reallocation](https://adventofcode.com/2017/day/6)                     |
 | [Day 7: Recursive Circus](https://adventofcode.com/2017/day/7)                        |
+| [Day 8: I Heard You Like Registers](https://adventofcode.com/2017/day/8)              |
 
 ### Solutions
 
-| Language | Days                                                                                                                                                      |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Zig`    | [`1`](./2017/zig/1/)                                                                                                                                      |
-| `Rust`   | [`1`](./2017/rust/1/) [`2`](./2017/rust/2/) [`3`](./2017/rust/3/) [`4`](./2017/rust/4/) [`5`](./2017/rust/5/) [`6`](./2017/rust/6/) [`7`](./2017/rust/7/) |
+| Language | Days                                                                                                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Zig`    | [`1`](./2017/zig/1/)                                                                                                                                                            |
+| `Rust`   | [`1`](./2017/rust/1/) [`2`](./2017/rust/2/) [`3`](./2017/rust/3/) [`4`](./2017/rust/4/) [`5`](./2017/rust/5/) [`6`](./2017/rust/6/) [`7`](./2017/rust/7/) [`8`](./2017/rust/8/) |
 
 # Language Support
 

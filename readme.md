@@ -151,6 +151,20 @@ I have multiple solution with different languages. Each language on its own fold
 | `Zig`    | [`1`](./2017/zig/1/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `Rust`   | [`1`](./2017/rust/1/) [`2`](./2017/rust/2/) [`3`](./2017/rust/3/) [`4`](./2017/rust/4/) [`5`](./2017/rust/5/) [`6`](./2017/rust/6/) [`7`](./2017/rust/7/) [`8`](./2017/rust/8/) [`9`](./2017/rust/9/) [`10`](./2017/rust/10/) [`11`](./2017/rust/11/) [`12`](./2017/rust/12/) [`13`](./2017/rust/13/) [`14`](./2017/rust/14/) [`15`](./2017/rust/15/) [`16`](./2017/rust/16/) [`17`](./2017/rust/17/) [`18`](./2017/rust/18/) [`19`](./2017/rust/19/) [`20`](./2017/rust/20/) [`21`](./2017/rust/21/) [`22`](./2017/rust/22/) [`23`](./2017/rust/23/) [`24`](./2017/rust/24/) [`25`](./2017/rust/25/) |
 
+## 2018
+
+### Problems
+
+| Problems                                                          |
+| :---------------------------------------------------------------- |
+| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1) |
+
+### Solutions
+
+| Language | Days                |
+| -------- | ------------------- |
+| `Go`     | [`1`](./2018/go/1/) |
+
 # Language Support
 
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`

@@ -155,15 +155,16 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                          |
-| :---------------------------------------------------------------- |
-| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1) |
+| Problems                                                                  |
+| :------------------------------------------------------------------------ |
+| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1)         |
+| [Day 2: Inventory Management System](https://adventofcode.com/2018/day/2) |
 
 ### Solutions
 
-| Language | Days                |
-| -------- | ------------------- |
-| `Go`     | [`1`](./2018/go/1/) |
+| Language | Days                                    |
+| -------- | --------------------------------------- |
+| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) |
 
 # Language Support
 

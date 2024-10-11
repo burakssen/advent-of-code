@@ -162,12 +162,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)  |
 | [Day 4: Repose Record](https://adventofcode.com/2018/day/4)               |
 | [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)        |
+| [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)         |
 
 ### Solutions
 
-| Language | Days                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------- |
-| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) |
+| Language | Days                                                                                                                   |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) [`6`](./2018/go/6) |
 
 # Language Support
 

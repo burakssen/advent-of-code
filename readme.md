@@ -155,25 +155,26 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                                  |
-| :------------------------------------------------------------------------ |
-| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1)         |
-| [Day 2: Inventory Management System](https://adventofcode.com/2018/day/2) |
-| [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)  |
-| [Day 4: Repose Record](https://adventofcode.com/2018/day/4)               |
-| [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)        |
-| [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)         |
-| [Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)        |
-| [Day 8: Memory Maneuver](https://adventofcode.com/2018/day/8)             |
-| [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)                |
-| [Day 10: The Stars Align](https://adventofcode.com/2018/day/10)           |
-| [Day 11: Chronal Charge](https://adventofcode.com/2018/day/11)            |
+| Problems                                                                    |
+| :-------------------------------------------------------------------------- |
+| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1)           |
+| [Day 2: Inventory Management System](https://adventofcode.com/2018/day/2)   |
+| [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)    |
+| [Day 4: Repose Record](https://adventofcode.com/2018/day/4)                 |
+| [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)          |
+| [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)           |
+| [Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)          |
+| [Day 8: Memory Maneuver](https://adventofcode.com/2018/day/8)               |
+| [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)                  |
+| [Day 10: The Stars Align](https://adventofcode.com/2018/day/10)             |
+| [Day 11: Chronal Charge](https://adventofcode.com/2018/day/11)              |
+| [Day 12: Subterranean Sustainability](https://adventofcode.com/2018/day/12) |
 
 ### Solutions
 
-| Language | Days                                                                                                                                                                                                                      |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) [`6`](./2018/go/6) [`7`](./2018/go/7) [`8`](./2018/go/8) [`9`](./2018/go/9) [`10`](./2018/go/10) [`11`](./2018/go/11) |
+| Language | Days                                                                                                                                                                                                                                           |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) [`6`](./2018/go/6) [`7`](./2018/go/7) [`8`](./2018/go/8) [`9`](./2018/go/9) [`10`](./2018/go/10) [`11`](./2018/go/11) [`12`](./2018/go/12) |
 
 # Language Support
 

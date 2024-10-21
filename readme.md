@@ -199,12 +199,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 1: The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) |
 | [Day 2: 1202 Program Alarm](https://adventofcode.com/2019/day/2)                 |
 | [Day 3: Crossed Wires](https://adventofcode.com/2019/day/3)                      |
+| [Day 4: Secure Container](https://adventofcode.com/2019/day/4)                   |
 
 ### Solutions
 
 | Language | Days                   |
 | -------- | ---------------------- |
-| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) |
+| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) [`4`](./2019/swift/4/) |
 
 # Language Support
 

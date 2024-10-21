@@ -156,37 +156,38 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                                    |
-| :-------------------------------------------------------------------------- |
-| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1)           |
-| [Day 2: Inventory Management System](https://adventofcode.com/2018/day/2)   |
-| [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)    |
-| [Day 4: Repose Record](https://adventofcode.com/2018/day/4)                 |
-| [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)          |
-| [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)           |
-| [Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)          |
-| [Day 8: Memory Maneuver](https://adventofcode.com/2018/day/8)               |
-| [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)                  |
-| [Day 10: The Stars Align](https://adventofcode.com/2018/day/10)             |
-| [Day 11: Chronal Charge](https://adventofcode.com/2018/day/11)              |
-| [Day 12: Subterranean Sustainability](https://adventofcode.com/2018/day/12) |
-| [Day 13: Mine Cart Madness](https://adventofcode.com/2018/day/13)           |
-| [Day 14: Chocolate Charts](https://adventofcode.com/2018/day/14)            |
-| [Day 15: Beverage Bandits](https://adventofcode.com/2018/day/15)            |
-| [Day 16: Chronal Classification](https://adventofcode.com/2018/day/16)      |
-| [Day 17: Reservoir Research](https://adventofcode.com/2018/day/17)          |
-| [Day 18: Settlers of The North Pole](https://adventofcode.com/2018/day/18)  |
-| [Day 19: Go With The Flow](https://adventofcode.com/2018/day/19)            |
-| [Day 20: A Regular Map](https://adventofcode.com/2018/day/20)               |
-| [Day 21: Chronal Conversion](https://adventofcode.com/2018/day/21)          |
-| [Day 22: Mode Maze](https://adventofcode.com/2018/day/22)                   |
+| Problems                                                                             |
+| :----------------------------------------------------------------------------------- |
+| [Day 1: Chronal Calibration](https://adventofcode.com/2018/day/1)                    |
+| [Day 2: Inventory Management System](https://adventofcode.com/2018/day/2)            |
+| [Day 3: No Matter How You Slice It](https://adventofcode.com/2018/day/3)             |
+| [Day 4: Repose Record](https://adventofcode.com/2018/day/4)                          |
+| [Day 5: Alchemical Reduction](https://adventofcode.com/2018/day/5)                   |
+| [Day 6: Chronal Coordinates](https://adventofcode.com/2018/day/6)                    |
+| [Day 7: The Sum of Its Parts](https://adventofcode.com/2018/day/7)                   |
+| [Day 8: Memory Maneuver](https://adventofcode.com/2018/day/8)                        |
+| [Day 9: Marble Mania](https://adventofcode.com/2018/day/9)                           |
+| [Day 10: The Stars Align](https://adventofcode.com/2018/day/10)                      |
+| [Day 11: Chronal Charge](https://adventofcode.com/2018/day/11)                       |
+| [Day 12: Subterranean Sustainability](https://adventofcode.com/2018/day/12)          |
+| [Day 13: Mine Cart Madness](https://adventofcode.com/2018/day/13)                    |
+| [Day 14: Chocolate Charts](https://adventofcode.com/2018/day/14)                     |
+| [Day 15: Beverage Bandits](https://adventofcode.com/2018/day/15)                     |
+| [Day 16: Chronal Classification](https://adventofcode.com/2018/day/16)               |
+| [Day 17: Reservoir Research](https://adventofcode.com/2018/day/17)                   |
+| [Day 18: Settlers of The North Pole](https://adventofcode.com/2018/day/18)           |
+| [Day 19: Go With The Flow](https://adventofcode.com/2018/day/19)                     |
+| [Day 20: A Regular Map](https://adventofcode.com/2018/day/20)                        |
+| [Day 21: Chronal Conversion](https://adventofcode.com/2018/day/21)                   |
+| [Day 22: Mode Maze](https://adventofcode.com/2018/day/22)                            |
 | [Day 23: Experimental Emergency Teleportation](https://adventofcode.com/2018/day/23) |
+| [Day 24: Immune System Simulator 20XX](https://adventofcode.com/2018/day/24)         |
 
 ### Solutions
 
-| Language | Days                                                                                                                                                                                                                                                                |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) [`6`](./2018/go/6) [`7`](./2018/go/7) [`8`](./2018/go/8) [`9`](./2018/go/9) [`10`](./2018/go/10) [`11`](./2018/go/11) [`12`](./2018/go/12) [`13`](./2018/go/13) [`14`](./2018/go/14) [`15`](./2018/go/15) [`16`](./2018/go/16) [`17`](./2018/go/17) [`18`](./2018/go/18) [`19`](./2018/go/19) [`20`](./2018/go/20) [`21`](./2018/go/21) [`22`](./2018/go/22) [`23`](./2018/go/23) |
+| Language | Days                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Go`     | [`1`](./2018/go/1/) [`2`](./2018/go/2/) [`3`](./2018/go/3/) [`4`](./2018/go/4/) [`5`](./2018/go/5/) [`6`](./2018/go/6) [`7`](./2018/go/7) [`8`](./2018/go/8) [`9`](./2018/go/9) [`10`](./2018/go/10) [`11`](./2018/go/11) [`12`](./2018/go/12) [`13`](./2018/go/13) [`14`](./2018/go/14) [`15`](./2018/go/15) [`16`](./2018/go/16) [`17`](./2018/go/17) [`18`](./2018/go/18) [`19`](./2018/go/19) [`20`](./2018/go/20) [`21`](./2018/go/21) [`22`](./2018/go/22) [`23`](./2018/go/23) [`24`](./2018/go/24) |
 
 # Language Support
 

@@ -214,9 +214,9 @@ I have multiple solution with different languages. Each language on its own fold
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
 | Language | Status | Language | Status | Language | Status |
 | --- | --- | --- | --- | --- | --- |
-| `C` | ✅ | `C++` | ✅ |`C#` | ✅ |
-| `Go` | ✅ | `Haskell` | ✅ | `Java` | ✅ |
-| `Javascript` | ✅ | `Lua` | ✅ | `Php` | ✅ |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" width="50"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="50"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" width="60"> | ✅ |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" width="100"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" width="60"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" width="40"> | ✅ |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="50"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg" width="60"> | ✅ | <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"> | ✅ |
 | `Python` | ✅ | `Ruby` | ✅ | `Rust` | ✅ |
 | `Swift` | ✅ | `Typescript` | ✅ | `Zig` | ✅ |
 | `Odin` | ❌ | `Nim` | ❌ | `Elixir` | ❌ |

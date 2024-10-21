@@ -200,12 +200,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 2: 1202 Program Alarm](https://adventofcode.com/2019/day/2)                 |
 | [Day 3: Crossed Wires](https://adventofcode.com/2019/day/3)                      |
 | [Day 4: Secure Container](https://adventofcode.com/2019/day/4)                   |
+| [Day 5: Sunny with a Chance of Asteroids](https://adventofcode.com/2019/day/5)   |
 
 ### Solutions
 
 | Language | Days                   |
 | -------- | ---------------------- |
-| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) [`4`](./2019/swift/4/) |
+| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) [`4`](./2019/swift/4/) [`5`](./2019/swift/5/) |
 
 # Language Support
 

@@ -13,7 +13,7 @@ I have multiple solution with different languages. Each language on its own fold
 
 `Important: The language distribution does not include the CMake and Make build systems languages`
 
-[<img src="https://tr.wikipedia.org/wiki/Dosya:The_C_Programming_Language_logo.svg" />](./2015/c)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1920px-The_C_Programming_Language_logo.svg.png" />](./2015/c)
 
 ## Languages
 

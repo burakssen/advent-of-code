@@ -203,12 +203,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 4: Secure Container](https://adventofcode.com/2019/day/4)                   |
 | [Day 5: Sunny with a Chance of Asteroids](https://adventofcode.com/2019/day/5)   |
 | [Day 6: Universal Orbit Map](https://adventofcode.com/2019/day/6)                |
+| [Day 7: Amplification Circuit](https://adventofcode.com/2019/day/7)              |
 
 ### Solutions
 
-| Language | Days                                                                                                                                      |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) [`4`](./2019/swift/4/) [`5`](./2019/swift/5/) [`6`](./2019/swift/6/) |
+| Language | Days                                                                                                                                                             |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Swift`  | [`1`](./2019/swift/1/) [`2`](./2019/swift/2/) [`3`](./2019/swift/3/) [`4`](./2019/swift/4/) [`5`](./2019/swift/5/) [`6`](./2019/swift/6/) [`7`](./2019/swift/7/) |
 
 # Language Support
 

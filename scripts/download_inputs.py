@@ -127,7 +127,7 @@ def parse_range_arg(arg: Union[str, int]) -> List[int]:
 def main():
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Download Advent of Code input files')
-    parser.add_argument('-y', '--years', type=parse_range_arg, default=range(2015, 2025),
+    parser.add_argument('-y', '--years', type=parse_range_arg, default=[year for year in range(2015, datetime.datetime.now().year + 1)],
                         help='Year or year range (e.g., 2020 or 2020-2022)')
     parser.add_argument('-d', '--days', type=parse_range_arg, 
                         help='Day or day range (e.g., 5 or 1-10)')

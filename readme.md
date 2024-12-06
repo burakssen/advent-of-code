@@ -234,33 +234,51 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                          |
-| :---------------------------------------------------------------- |
-| [Day 1: Report Repair](https://adventofcode.com/2020/day/1)       |
-| [Day 2: Password Philosophy](https://adventofcode.com/2020/day/2) |
-| [Day 3: Toboggan Trajectory](https://adventofcode.com/2020/day/3) |
-| [Day 4: Passport Processing](https://adventofcode.com/2020/day/4) |
-| [Day 5: Binary Boarding](https://adventofcode.com/2020/day/5)     |
-| [Day 6: Custom Customs](https://adventofcode.com/2020/day/6)      |
-| [Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)    |
-| [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)    |
-| [Day 9: Encoding Error](https://adventofcode.com/2020/day/9)      |
-| [Day 10: Adapter Array](https://adventofcode.com/2020/day/10)     |
-| [Day 11: Seating System](https://adventofcode.com/2020/day/11)    |
-| [Day 12: Rain Risk](https://adventofcode.com/2020/day/12)         |
-| [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)    |
-| [Day 14: Docking Data](https://adventofcode.com/2020/day/14)      |
+| Problems                                                                |
+| :---------------------------------------------------------------------- |
+| [Day 1: Report Repair](https://adventofcode.com/2020/day/1)             |
+| [Day 2: Password Philosophy](https://adventofcode.com/2020/day/2)       |
+| [Day 3: Toboggan Trajectory](https://adventofcode.com/2020/day/3)       |
+| [Day 4: Passport Processing](https://adventofcode.com/2020/day/4)       |
+| [Day 5: Binary Boarding](https://adventofcode.com/2020/day/5)           |
+| [Day 6: Custom Customs](https://adventofcode.com/2020/day/6)            |
+| [Day 7: Handy Haversacks](https://adventofcode.com/2020/day/7)          |
+| [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)          |
+| [Day 9: Encoding Error](https://adventofcode.com/2020/day/9)            |
+| [Day 10: Adapter Array](https://adventofcode.com/2020/day/10)           |
+| [Day 11: Seating System](https://adventofcode.com/2020/day/11)          |
+| [Day 12: Rain Risk](https://adventofcode.com/2020/day/12)               |
+| [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)          |
+| [Day 14: Docking Data](https://adventofcode.com/2020/day/14)            |
 | [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15) |
-| [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16) |
-| [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)      |
-| [Day 18: Operation Order](https://adventofcode.com/2020/day/18)    |
-| [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)  |
+| [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)      |
+| [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)            |
+| [Day 18: Operation Order](https://adventofcode.com/2020/day/18)         |
+| [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)        |
 
 ## Solutions
 
-| Language | Days                                                                                                                                                                    |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Language | Days                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Zig`    | [`1`](./2020/zig/1/) [`2`](./2020/zig/2/) [`3`](./2020/zig/3/) [`4`](./2020/zig/4/) [`5`](./2020/zig/5/) [`6`](./2020/zig/6/) [`7`](./2020/zig/7/) [`8`](./2020/zig/8/) [`9`](./2020/zig/9/) [`10`](./2020/zig/10/) [`11`](./2020/zig/11/) [`12`](./2020/zig/12/) [`13`](./2020/zig/13/) [`14`](./2020/zig/14/) [`15`](./2020/zig/15/) [`16`](./2020/zig/16/) [`17`](./2020/zig/17/) [`18`](./2020/zig/18/) [`19`](./2020/zig/19/) |
+
+## 2024
+
+### Problems
+
+| Problems                                                          |
+| :---------------------------------------------------------------- |
+| [Day 1: Report Repair](https://adventofcode.com/2024/day/1)       |
+| [Day 2: Password Philosophy](https://adventofcode.com/2024/day/2) |
+| [Day 3: Toboggan Trajectory](https://adventofcode.com/2024/day/3) |
+| [Day 4: Passport Processing](https://adventofcode.com/2024/day/4) |
+| [Day 5: Binary Boarding](https://adventofcode.com/2024/day/5)     |
+
+### Solutions
+
+| Language     | Days                                                                                                                                        |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) |
 
 # Language Support
 

@@ -23,6 +23,10 @@ I have multiple solution with different languages. Each language on its own fold
 | [`2018`](#2018) | [`Go`](./2018/go/)                                                                                                                                                                                                                                                                                                                                                    |
 | [`2019`](#2019) | [`Swift`](./2019/swift)                                                                                                                                                                                                                                                                                                                                               |
 | [`2020`](#2020) | [`Zig`](./2020/zig/)                                                                                                                                                                                                                                                                                                                                                  |
+| [`2021`](#2021) |                                                                                                                                                                                                                                                                                                                                                                       |
+| [`2022`](#2022) |                                                                                                                                                                                                                                                                                                                                                                       |
+| [`2023`](#2023) |                                                                                                                                                                                                                                                                                                                                                                       |
+| [`2024`](#2024) | [`Typescript`](./2024/typescript/)                                                                                                                                                                                                                                                                                                                                    |
 
 ## 2015
 
@@ -266,21 +270,22 @@ I have multiple solution with different languages. Each language on its own fold
 
 ### Problems
 
-| Problems                                                         |
-| :--------------------------------------------------------------- |
-| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) |
-| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)  |
-| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)       |
-| [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)       |
-| [Day 5: Print Queue](https://adventofcode.com/2024/day/5)        |
-| [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6)    |
-| [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7)      |
+| Problems                                                           |
+| :----------------------------------------------------------------- |
+| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)   |
+| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)    |
+| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)         |
+| [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)         |
+| [Day 5: Print Queue](https://adventofcode.com/2024/day/5)          |
+| [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6)      |
+| [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7)        |
+| [Day 8: Space Station Sleigh](https://adventofcode.com/2024/day/8) |
 
 ### Solutions
 
-| Language     | Days                                                                                                                                                                                                |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) |
+| Language     | Days                                                                                                                                                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) [`8`](./2024/typescript/8/) |
 
 # Language Support
 

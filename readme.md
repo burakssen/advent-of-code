@@ -280,12 +280,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6)      |
 | [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7)        |
 | [Day 8: Space Station Sleigh](https://adventofcode.com/2024/day/8) |
+| [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9)      |
 
 ### Solutions
 
-| Language     | Days                                                                                                                                                                                                                            |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) [`8`](./2024/typescript/8/) |
+| Language     | Days                                                                                                                                                                                                                                                        |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) [`8`](./2024/typescript/8/) [`9`](./2024/typescript/9/) |
 
 # Language Support
 

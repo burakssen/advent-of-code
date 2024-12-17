@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "undici-types": "^7.0.0"
+  },
+  "dependencies": {
+    "itertools": "^2.3.2"
+  }
+}

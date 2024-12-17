@@ -282,12 +282,13 @@ I have multiple solution with different languages. Each language on its own fold
 | [Day 8: Space Station Sleigh](https://adventofcode.com/2024/day/8) |
 | [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9)      |
 | [Day 10: Hoof It](https://adventofcode.com/2024/day/10)            |
+| [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11)  |
 
 ### Solutions
 
-| Language     | Days                                                                                                                                                                                                                                                                                      |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) [`8`](./2024/typescript/8/) [`9`](./2024/typescript/9/) [`10`](./2024/typescript/10/) |
+| Language     | Days                                                                                                                                                                                                                                                                                                                    |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Typescript` | [`1`](./2024/typescript/1/) [`2`](./2024/typescript/2/) [`3`](./2024/typescript/3/) [`4`](./2024/typescript/4/) [`5`](./2024/typescript/5/) [`6`](./2024/typescript/6/) [`7`](./2024/typescript/7/) [`8`](./2024/typescript/8/) [`9`](./2024/typescript/9/) [`10`](./2024/typescript/10/) [`11`](./2024/typescript/11/) |
 
 # Language Support
 

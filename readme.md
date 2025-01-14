@@ -296,34 +296,16 @@ I have multiple solution with different languages. Each language on its own fold
 # Language Support
 
 `Note: The list of languages is not exhaustive, and I may add more languages in the future.`
-
-
-<table>
-  <tr>
-    <th>Language</th>
-    <th>Status</th>
-    <th>Language</th>
-    <th>Status</th>
-    <th>Language</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" alt="C" width="50"/>
-    </td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-    <td style="text-align: center; vertical-align: middle;">C++</td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-    <td style="text-align: center; vertical-align: middle;">C#</td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-  </tr>
-  <tr>
-    <td style="text-align: center; vertical-align: middle;">Go</td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-    <td style="text-align: center; vertical-align: middle;">Haskell</td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-    <td style="text-align: center; vertical-align: middle;">Java</td>
-    <td style="text-align: center; vertical-align: middle;">✅</td>
-  </tr>
-  <!-- Repeat rows as necessary -->
-</table>
+| Language | Status | Language | Status | Language | Status |
+| --- | --- | --- | --- | --- | --- |
+| `C` | ✅ | `C++` | ✅ |`C#` | ✅ |
+| `Go` | ✅ | `Haskell` | ✅ | `Java` | ✅ |
+| `Javascript` | ✅ | `Lua` | ✅ | `Php` | ✅ |
+| `Python` | ✅ | `Ruby` | ✅ | `Rust` | ✅ |
+| `Swift` | ✅ | `Typescript` | ✅ | `Zig` | ✅ |
+| `Odin` | ❌ | `Nim` | ❌ | `Elixir` | ❌ |
+| `V` | ❌ | `Vala` | ❌ | `Julia` | ❌ |
+| `Dart` | ❌ | `Clojure` | ❌ | `Kotlin` | ❌ |
+| `Lisp` | ❌ | `R` | ❌ | `Matlab` | ❌ |
+| `Perl`| ❌ | `Bash` | ❌ | `OCaml` | ❌ |
+| `Objective-C` | ❌ | | | | |

@@ -5,6 +5,7 @@ import argparse
 import requests
 import datetime
 from typing import List, Optional, Union
+import concurrent.futures
 
 class AOCInputDownloader:
     def __init__(self, session_cookie: Optional[str] = None):
@@ -13,7 +14,6 @@ class AOCInputDownloader:
         
         :param session_cookie: Optional AOC session cookie for authentication
         """
-        # Try to read session cookie from environment variable or file
         if not session_cookie:
             session_cookie = os.environ.get('AOC_SESSION_COOKIE')
         
@@ -45,17 +45,14 @@ class AOCInputDownloader:
             print(f"Invalid day: {day}. Day must be between 1 and 25.")
             return False
 
-        # Create output directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
-        
-        # Ensure year-specific directory exists
+        # Create output directories
         year_dir = os.path.join(output_dir, str(year))
         os.makedirs(year_dir, exist_ok=True)
 
         # Construct output file path
         output_path = os.path.join(year_dir, f"{day}.txt")
 
-        # Check if file already exists and force flag is False
+        # Skip if file exists and force flag is not set
         if os.path.exists(output_path) and not force:
             print(f"Input for Year {year}, Day {day} already exists. Skipping download.")
             return True
@@ -72,7 +69,6 @@ class AOCInputDownloader:
             # Send request to download input
             response = requests.get(url, headers=self.headers)
             
-            # Check for authentication or other errors
             if response.status_code == 400 or response.status_code == 401:
                 print("Authentication failed. Check your session cookie.")
                 return False
@@ -93,7 +89,7 @@ class AOCInputDownloader:
 
     def download_inputs(self, years: List[int], days: Optional[List[int]] = None, force: bool = False) -> None:
         """
-        Download inputs for specified years and days.
+        Download inputs for specified years and days in parallel.
         
         :param years: List of years to download
         :param days: Optional list of days to download (if None, download all days)
@@ -103,10 +99,16 @@ class AOCInputDownloader:
         if days is None:
             days = list(range(1, 26))
 
-        # Download inputs
-        for year in years:
-            for day in days:
-                self.download_input(year, day, force=force)
+        # Use ThreadPoolExecutor for parallel download
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = []
+            for year in years:
+                for day in days:
+                    futures.append(executor.submit(self.download_input, year, day, force=force))
+
+            # Wait for all downloads to complete
+            for future in concurrent.futures.as_completed(futures):
+                future.result()  # Result will throw exception if any occurred
 
 def parse_range_arg(arg: Union[str, int]) -> List[int]:
     """
@@ -115,13 +117,10 @@ def parse_range_arg(arg: Union[str, int]) -> List[int]:
     :param arg: Argument string or integer (e.g., '2020', '2020-2022', '1-5', 2023)
     :return: List of integers
     """
-    # Convert to string to handle both string and int inputs
     arg_str = str(arg)
-    
     if '-' in arg_str:
         start, end = map(int, arg_str.split('-'))
         return list(range(start, end + 1))
-    
     return [int(arg_str)]
 
 def main():
@@ -141,15 +140,11 @@ def main():
     # Parse arguments
     args = parser.parse_args()
 
-    # Flatten year and day lists 
-    years = [year for sublist in args.years for year in (sublist if isinstance(sublist, list) else [sublist])]
-    days = args.days if args.days else None
-
     # Initialize downloader
     downloader = AOCInputDownloader(args.cookie)
     
     # Download inputs
-    downloader.download_inputs(years, days, force=args.force)
+    downloader.download_inputs(args.years, args.days, force=args.force)
 
 if __name__ == '__main__':
     main()
